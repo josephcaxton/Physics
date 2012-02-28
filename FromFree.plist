@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>250Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.250</string>
+	<key>500Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.500</string>
+	<key>750Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.750</string>
+	<key>1000Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1000</string>
+	<key>1250Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1250</string>
+	<key>1500Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1500</string>
+	<key>1600Questions</key>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1600</string>
+</dict>
+</plist>
