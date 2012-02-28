@@ -104,6 +104,7 @@
 		7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1314FBD02B00EE3CDB /* Buy.m */; };
 		7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1614FBD03900EE3CDB /* Attribution.m */; };
 		7C42BB1A14FBD1F900EE3CDB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BB1914FBD1F900EE3CDB /* Settings.bundle */; };
+		7C73B8AE14FD2745001E4CE7 /* Evaluator.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,6 +251,7 @@
 		7C42BB1514FBD03900EE3CDB /* Attribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribution.h; sourceTree = "<group>"; };
 		7C42BB1614FBD03900EE3CDB /* Attribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribution.m; sourceTree = "<group>"; };
 		7C42BB1914FBD1F900EE3CDB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Evaluator.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,6 +533,7 @@
 		7C42BB1814FBD05400EE3CDB /* AppFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */,
 			);
 			name = AppFiles;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				7C42BB1114FBD01D00EE3CDB /* HelpVideo.m in Sources */,
 				7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */,
 				7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */,
+				7C73B8AE14FD2745001E4CE7 /* Evaluator.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +790,7 @@
 				7C42BA2814FBBB0F00EE3CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
