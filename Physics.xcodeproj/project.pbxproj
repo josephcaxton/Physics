@@ -104,7 +104,12 @@
 		7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1314FBD02B00EE3CDB /* Buy.m */; };
 		7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1614FBD03900EE3CDB /* Attribution.m */; };
 		7C42BB1A14FBD1F900EE3CDB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BB1914FBD1F900EE3CDB /* Settings.bundle */; };
-		7C73B8AE14FD2745001E4CE7 /* Evaluator.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */; };
+		7C73B8B314FD28D4001E4CE7 /* Evaluator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C73B8B014FD28D4001E4CE7 /* Evaluator.xcdatamodeld */; };
+		7C73B8B514FD2991001E4CE7 /* DescriptiveAnswers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */; };
+		7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B614FD29A2001E4CE7 /* Results.xml */; };
+		7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */; };
+		7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */; };
+		7C73B8BD14FD3C0A001E4CE7 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BC14FD3C0A001E4CE7 /* Physics.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -251,7 +256,13 @@
 		7C42BB1514FBD03900EE3CDB /* Attribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribution.h; sourceTree = "<group>"; };
 		7C42BB1614FBD03900EE3CDB /* Attribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribution.m; sourceTree = "<group>"; };
 		7C42BB1914FBD1F900EE3CDB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Evaluator.xcdatamodel; sourceTree = "<group>"; };
+		7C73B8B114FD28D4001E4CE7 /* Evaluator 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Evaluator 2.xcdatamodel"; sourceTree = "<group>"; };
+		7C73B8B214FD28D4001E4CE7 /* Evaluator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Evaluator.xcdatamodel; sourceTree = "<group>"; };
+		7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DescriptiveAnswers.xml; sourceTree = "<group>"; };
+		7C73B8B614FD29A2001E4CE7 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
+		7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
+		7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
+		7C73B8BC14FD3C0A001E4CE7 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +463,7 @@
 				7C42BABB14FBCDA500EE3CDB /* DBVersion.m */,
 				7C42BABD14FBCDB700EE3CDB /* Answers.h */,
 				7C42BABE14FBCDB700EE3CDB /* Answers.m */,
+				7C73B8B014FD28D4001E4CE7 /* Evaluator.xcdatamodeld */,
 			);
 			name = "Model and Model Classes";
 			sourceTree = "<group>";
@@ -533,7 +545,11 @@
 		7C42BB1814FBD05400EE3CDB /* AppFiles */ = {
 			isa = PBXGroup;
 			children = (
-				7C73B8AD14FD2745001E4CE7 /* Evaluator.xcdatamodel */,
+				7C73B8BC14FD3C0A001E4CE7 /* Physics.sqlite */,
+				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
+				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
+				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
+				7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */,
 			);
 			name = AppFiles;
 			sourceTree = "<group>";
@@ -631,6 +647,11 @@
 				7C42BAE514FBCF2200EE3CDB /* lk_QuestionListHeader.xib in Resources */,
 				7C42BAEA14FBCF3600EE3CDB /* lk_Topics.xib in Resources */,
 				7C42BB1A14FBD1F900EE3CDB /* Settings.bundle in Resources */,
+				7C73B8B514FD2991001E4CE7 /* DescriptiveAnswers.xml in Resources */,
+				7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */,
+				7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */,
+				7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */,
+				7C73B8BD14FD3C0A001E4CE7 /* Physics.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +706,7 @@
 				7C42BB1114FBD01D00EE3CDB /* HelpVideo.m in Sources */,
 				7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */,
 				7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */,
-				7C73B8AE14FD2745001E4CE7 /* Evaluator.xcdatamodel in Sources */,
+				7C73B8B314FD28D4001E4CE7 /* Evaluator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +814,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7C73B8B014FD28D4001E4CE7 /* Evaluator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7C73B8B114FD28D4001E4CE7 /* Evaluator 2.xcdatamodel */,
+				7C73B8B214FD28D4001E4CE7 /* Evaluator.xcdatamodel */,
+			);
+			currentVersion = 7C73B8B114FD28D4001E4CE7 /* Evaluator 2.xcdatamodel */;
+			path = Evaluator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7C42B9F114FBBB0E00EE3CDB /* Project object */;
 }

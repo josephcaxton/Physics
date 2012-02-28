@@ -237,11 +237,11 @@
 	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
-    DevicePath = [documentsDir stringByAppendingPathComponent:@"GCSEMaths.sqlite"];
+    DevicePath = [documentsDir stringByAppendingPathComponent:@"Physics.sqlite"];
 	ResultsXMLDestination = [documentsDir stringByAppendingPathComponent:@"Results.xml"];
 	DescriptiveAnswersXMLDestination = [documentsDir stringByAppendingPathComponent:@"DescriptiveAnswers.xml"];
 	
-    BundlePath = [[NSBundle mainBundle] pathForResource:@"GCSEMaths" ofType:@"sqlite"];
+    BundlePath = [[NSBundle mainBundle] pathForResource:@"Physics" ofType:@"sqlite"];
 	ResultsXML = [[NSBundle mainBundle] pathForResource:@"Results" ofType:@"xml"];
 	DescriptiveAnswersXML = [[NSBundle mainBundle] pathForResource:@"DescriptiveAnswers" ofType:@"xml"];
 	
@@ -471,7 +471,7 @@
         return persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"GCSEMaths.sqlite"]];
+    NSURL *storeURL = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Physics.sqlite"]];
 	
 	/* Turn on automatic store migration
 	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
