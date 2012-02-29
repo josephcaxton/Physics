@@ -104,13 +104,13 @@
 -(void) provideContent:(NSString *)productIdentifier{
 	
 	// From Free
-	if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250"]) {
+	if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250"]) {
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"2" forKey:@"AccessLevel"];
 	
 	}
 		 
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500"])
 		 
 	{
 		[[NSUserDefaults standardUserDefaults] setObject:@"3" forKey:@"AccessLevel"];	 
@@ -118,7 +118,7 @@
 			 
 	}
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.750"])
 		
 	{
 		[[NSUserDefaults standardUserDefaults] setObject:@"4" forKey:@"AccessLevel"];	 
@@ -126,193 +126,70 @@
 		
 	}
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1000"])   
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.1000"])   
 		
 	{
 		[[NSUserDefaults standardUserDefaults] setObject:@"5" forKey:@"AccessLevel"];	 
 		
 		
 	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1250"])
-		
-	{
-		[[NSUserDefaults standardUserDefaults] setObject:@"6" forKey:@"AccessLevel"];	 
-		
-		
-	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1500"])
-		
-	{
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];	 
-		
-		
-	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1600"])
-		
-	{
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];	 
-		
-		
-	}
-	// From 250
+   	// From 250
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To500"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To500"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"3" forKey:@"AccessLevel"];
 		
 	}
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To750"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To750"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"4" forKey:@"AccessLevel"];
 		
 	}
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1000"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To1000"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"5" forKey:@"AccessLevel"];
 		
 	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1250"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"6" forKey:@"AccessLevel"];
-		
-	}
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1500"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];
-		
-	}
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.250To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
-
+    
 	// From 500
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500To750"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500To750"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"4" forKey:@"AccessLevel"];
 		
 	}
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500To1000"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500To1000"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"5" forKey:@"AccessLevel"];
 		
 	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500To1250"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"6" forKey:@"AccessLevel"];
-		
-	}
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500To1500"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];
-		
-	}
-
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.500To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
+    
 	
 	
 	
 	// From 750
 	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750To1000"])
+	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Physics.750To1000"])
 	{
 		
 		[[NSUserDefaults standardUserDefaults] setObject:@"5" forKey:@"AccessLevel"];
 		
 	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750To1250"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"6" forKey:@"AccessLevel"];
-		
-	}
-
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750To1500"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];
-		
-	}
-
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.750To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
+   
 
     
-    // From 1000
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1000To1250"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"6" forKey:@"AccessLevel"];
-		
-	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1000To1500"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];
-		
-	}
-
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1000To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
-
     
-    // From 1250
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1250To1500"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"7" forKey:@"AccessLevel"];
-		
-	}
-    else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1250To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
     
-    // From 1500
-	
-	else if ([productIdentifier isEqualToString:@"com.LearnersCloud.iEvaluatorForiPad.Maths.1500To1600"])
-	{
-		
-		[[NSUserDefaults standardUserDefaults] setObject:@"8" forKey:@"AccessLevel"];
-		
-	}
-	
-	
+        
+    	
 	
 			
 						

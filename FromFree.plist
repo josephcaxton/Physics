@@ -3,18 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>250Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.250</string>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Physics.250</string>
 	<key>500Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.500</string>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Physics.500</string>
 	<key>750Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.750</string>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Physics.750</string>
 	<key>1000Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1000</string>
-	<key>1250Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1250</string>
-	<key>1500Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1500</string>
-	<key>1600Questions</key>
-	<string>com.LearnersCloud.iEvaluatorForiPad.Maths.1600</string>
+	<string>com.LearnersCloud.iEvaluatorForiPad.Physics.1000</string>
 </dict>
 </plist>
