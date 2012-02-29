@@ -358,7 +358,7 @@
 	}
 	
 	else if (tableView.tag == 2 && section == 0){
-		title =@"";
+		title = @"";
 		
 	}
 	
