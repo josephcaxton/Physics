@@ -82,11 +82,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section. If User is configuring the  we need to add ALL
 	if (UserConfigure) {
-		return 3;
+		return 4;
 	}
 	else{
 		
-		return 2;
+		return 3;
 	}
 }
 
