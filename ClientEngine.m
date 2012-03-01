@@ -428,16 +428,16 @@ int ToReviewQuestions = 0;
 	
 	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 	
-	if ([appDelegate.Difficulty  isEqualToString:@"Foundation" ] ) {
+	if ([appDelegate.Difficulty  isEqualToString:@"Easy" ] ) {
 		return [NSNumber numberWithInt:1];
 	}	
 	
-//	else if ([appDelegate.Difficulty isEqualToString:@"Foundation & Higher"]){
-//		
-//		return [NSNumber numberWithInt:0];
-//	}
+	else if ([appDelegate.Difficulty isEqualToString:@"Medium"]){
+		
+		return [NSNumber numberWithInt:2];
+	}
 	
-	else if([appDelegate.Difficulty isEqualToString:@"Higher"]){
+	else if([appDelegate.Difficulty isEqualToString:@"Difficult"]){
 		
 		return [NSNumber numberWithInt:3];
 		
