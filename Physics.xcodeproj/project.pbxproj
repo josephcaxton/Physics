@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C12CCE514FFD8EA009A51B2 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C12CCE414FFD8EA009A51B2 /* Physics.sqlite */; };
+		7C12CCE714FFDCB3009A51B2 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C12CCE614FFDCB3009A51B2 /* Physics.sqlite */; };
 		7C42B9FF14FBBB0E00EE3CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */; };
 		7C42BA0114FBBB0E00EE3CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */; };
 		7C42BA0314FBBB0E00EE3CDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0214FBBB0E00EE3CDB /* CoreGraphics.framework */; };
@@ -1121,7 +1121,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C12CCE414FFD8EA009A51B2 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
+		7C12CCE614FFDCB3009A51B2 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7C42B9FA14FBBB0E00EE3CDB /* Physics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Physics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3569,7 +3569,7 @@
 				7C5D7CF214FE7DBF0034DF78 /* 1006.pdf */,
 				7C5D7CF314FE7DBF0034DF78 /* 1007.pdf */,
 				7C5D7CF414FE7DBF0034DF78 /* 1008.pdf */,
-				7C12CCE414FFD8EA009A51B2 /* Physics.sqlite */,
+				7C12CCE614FFDCB3009A51B2 /* Physics.sqlite */,
 				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
 				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
 				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
@@ -4683,7 +4683,7 @@
 				7C5D80E214FE7DC00034DF78 /* 1006.pdf in Resources */,
 				7C5D80E314FE7DC00034DF78 /* 1007.pdf in Resources */,
 				7C5D80E414FE7DC00034DF78 /* 1008.pdf in Resources */,
-				7C12CCE514FFD8EA009A51B2 /* Physics.sqlite in Resources */,
+				7C12CCE714FFDCB3009A51B2 /* Physics.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
