@@ -41,17 +41,12 @@
 		7C42BA7414FBC22900EE3CDB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7314FBC22900EE3CDB /* Icon.png */; };
 		7C42BA7614FBC25C00EE3CDB /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7514FBC25C00EE3CDB /* Icon-Small-50.png */; };
 		7C42BA7814FBC28A00EE3CDB /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7714FBC28A00EE3CDB /* Icon-72.png */; };
-		7C42BA7A14FBC2A200EE3CDB /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7914FBC2A200EE3CDB /* Maths.png */; };
-		7C42BA7C14FBC2B800EE3CDB /* Maths.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7B14FBC2B800EE3CDB /* Maths.m4v */; };
 		7C42BA7E14FBC2CD00EE3CDB /* ITest U Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7D14FBC2CD00EE3CDB /* ITest U Video.m4v */; };
 		7C42BA8014FBC41000EE3CDB /* Physics.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA7F14FBC41000EE3CDB /* Physics.png */; };
-		7C42BA8214FBC4E800EE3CDB /* Physics.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8114FBC4E800EE3CDB /* Physics.m4v */; };
 		7C42BA8414FBC4F900EE3CDB /* English.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8314FBC4F900EE3CDB /* English.png */; };
-		7C42BA8614FBC50B00EE3CDB /* English.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8514FBC50B00EE3CDB /* English.m4v */; };
 		7C42BA8814FBC51900EE3CDB /* Cough.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8714FBC51900EE3CDB /* Cough.aiff */; };
 		7C42BA8A14FBC52A00EE3CDB /* Clapping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8914FBC52A00EE3CDB /* Clapping.aiff */; };
 		7C42BA8C14FBC53B00EE3CDB /* Chemistry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8B14FBC53B00EE3CDB /* Chemistry.png */; };
-		7C42BA8E14FBC55100EE3CDB /* Chemistry.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8D14FBC55100EE3CDB /* Chemistry.m4v */; };
 		7C42BA9014FBC56000EE3CDB /* ArrowWoodImpact.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA8F14FBC56000EE3CDB /* ArrowWoodImpact.aiff */; };
 		7C42BA9614FBC5A700EE3CDB /* From250.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA9114FBC5A700EE3CDB /* From250.plist */; };
 		7C42BA9714FBC5A700EE3CDB /* From500.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BA9214FBC5A700EE3CDB /* From500.plist */; };
@@ -1114,6 +1109,11 @@
 		7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B614FD29A2001E4CE7 /* Results.xml */; };
 		7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */; };
 		7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */; };
+		7CA17F68150B96F80065516B /* Chemistry.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F63150B96F80065516B /* Chemistry.m4v */; };
+		7CA17F69150B96F80065516B /* English.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F64150B96F80065516B /* English.m4v */; };
+		7CA17F6A150B96F80065516B /* Maths.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F65150B96F80065516B /* Maths.m4v */; };
+		7CA17F6B150B96F80065516B /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F66150B96F80065516B /* Maths.png */; };
+		7CA17F6C150B96F80065516B /* Physics.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F67150B96F80065516B /* Physics.m4v */; };
 		7CA647D315051E9C00D7CEC0 /* 786.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA647D015051E9C00D7CEC0 /* 786.pdf */; };
 		7CA647D415051E9C00D7CEC0 /* 787.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA647D115051E9C00D7CEC0 /* 787.pdf */; };
 		7CA647D515051E9C00D7CEC0 /* 788.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA647D215051E9C00D7CEC0 /* 788.pdf */; };
@@ -1173,17 +1173,12 @@
 		7C42BA7314FBC22900EE3CDB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7C42BA7514FBC25C00EE3CDB /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		7C42BA7714FBC28A00EE3CDB /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		7C42BA7914FBC2A200EE3CDB /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
-		7C42BA7B14FBC2B800EE3CDB /* Maths.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths.m4v; sourceTree = "<group>"; };
 		7C42BA7D14FBC2CD00EE3CDB /* ITest U Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITest U Video.m4v"; sourceTree = "<group>"; };
 		7C42BA7F14FBC41000EE3CDB /* Physics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Physics.png; sourceTree = "<group>"; };
-		7C42BA8114FBC4E800EE3CDB /* Physics.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.m4v; sourceTree = "<group>"; };
 		7C42BA8314FBC4F900EE3CDB /* English.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = English.png; sourceTree = "<group>"; };
-		7C42BA8514FBC50B00EE3CDB /* English.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.m4v; sourceTree = "<group>"; };
 		7C42BA8714FBC51900EE3CDB /* Cough.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Cough.aiff; sourceTree = "<group>"; };
 		7C42BA8914FBC52A00EE3CDB /* Clapping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Clapping.aiff; sourceTree = "<group>"; };
 		7C42BA8B14FBC53B00EE3CDB /* Chemistry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chemistry.png; sourceTree = "<group>"; };
-		7C42BA8D14FBC55100EE3CDB /* Chemistry.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chemistry.m4v; sourceTree = "<group>"; };
 		7C42BA8F14FBC56000EE3CDB /* ArrowWoodImpact.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ArrowWoodImpact.aiff; sourceTree = "<group>"; };
 		7C42BA9114FBC5A700EE3CDB /* From250.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = From250.plist; sourceTree = "<group>"; };
 		7C42BA9214FBC5A700EE3CDB /* From500.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = From500.plist; sourceTree = "<group>"; };
@@ -2275,6 +2270,11 @@
 		7C73B8B614FD29A2001E4CE7 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
 		7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
+		7CA17F63150B96F80065516B /* Chemistry.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chemistry.m4v; sourceTree = "<group>"; };
+		7CA17F64150B96F80065516B /* English.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = English.m4v; sourceTree = "<group>"; };
+		7CA17F65150B96F80065516B /* Maths.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths.m4v; sourceTree = "<group>"; };
+		7CA17F66150B96F80065516B /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
+		7CA17F67150B96F80065516B /* Physics.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.m4v; sourceTree = "<group>"; };
 		7CA647D015051E9C00D7CEC0 /* 786.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 786.pdf; sourceTree = "<group>"; };
 		7CA647D115051E9C00D7CEC0 /* 787.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 787.pdf; sourceTree = "<group>"; };
 		7CA647D215051E9C00D7CEC0 /* 788.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 788.pdf; sourceTree = "<group>"; };
@@ -2427,18 +2427,18 @@
 				7C42BA7314FBC22900EE3CDB /* Icon.png */,
 				7C42BA7514FBC25C00EE3CDB /* Icon-Small-50.png */,
 				7C42BA7714FBC28A00EE3CDB /* Icon-72.png */,
-				7C42BA7914FBC2A200EE3CDB /* Maths.png */,
-				7C42BA7B14FBC2B800EE3CDB /* Maths.m4v */,
 				7C42BA7D14FBC2CD00EE3CDB /* ITest U Video.m4v */,
 				7C42BA0614FBBB0E00EE3CDB /* Physics-Info.plist */,
 				7C42BA7F14FBC41000EE3CDB /* Physics.png */,
-				7C42BA8114FBC4E800EE3CDB /* Physics.m4v */,
 				7C42BA8314FBC4F900EE3CDB /* English.png */,
-				7C42BA8514FBC50B00EE3CDB /* English.m4v */,
 				7C42BA8714FBC51900EE3CDB /* Cough.aiff */,
 				7C42BA8914FBC52A00EE3CDB /* Clapping.aiff */,
+				7CA17F63150B96F80065516B /* Chemistry.m4v */,
+				7CA17F64150B96F80065516B /* English.m4v */,
+				7CA17F65150B96F80065516B /* Maths.m4v */,
+				7CA17F66150B96F80065516B /* Maths.png */,
+				7CA17F67150B96F80065516B /* Physics.m4v */,
 				7C42BA8B14FBC53B00EE3CDB /* Chemistry.png */,
-				7C42BA8D14FBC55100EE3CDB /* Chemistry.m4v */,
 				7C42BA8F14FBC56000EE3CDB /* ArrowWoodImpact.aiff */,
 				7C42BA9114FBC5A700EE3CDB /* From250.plist */,
 				7C42BA9214FBC5A700EE3CDB /* From500.plist */,
@@ -3636,17 +3636,12 @@
 				7C42BA7414FBC22900EE3CDB /* Icon.png in Resources */,
 				7C42BA7614FBC25C00EE3CDB /* Icon-Small-50.png in Resources */,
 				7C42BA7814FBC28A00EE3CDB /* Icon-72.png in Resources */,
-				7C42BA7A14FBC2A200EE3CDB /* Maths.png in Resources */,
-				7C42BA7C14FBC2B800EE3CDB /* Maths.m4v in Resources */,
 				7C42BA7E14FBC2CD00EE3CDB /* ITest U Video.m4v in Resources */,
 				7C42BA8014FBC41000EE3CDB /* Physics.png in Resources */,
-				7C42BA8214FBC4E800EE3CDB /* Physics.m4v in Resources */,
 				7C42BA8414FBC4F900EE3CDB /* English.png in Resources */,
-				7C42BA8614FBC50B00EE3CDB /* English.m4v in Resources */,
 				7C42BA8814FBC51900EE3CDB /* Cough.aiff in Resources */,
 				7C42BA8A14FBC52A00EE3CDB /* Clapping.aiff in Resources */,
 				7C42BA8C14FBC53B00EE3CDB /* Chemistry.png in Resources */,
-				7C42BA8E14FBC55100EE3CDB /* Chemistry.m4v in Resources */,
 				7C42BA9014FBC56000EE3CDB /* ArrowWoodImpact.aiff in Resources */,
 				7C42BA9614FBC5A700EE3CDB /* From250.plist in Resources */,
 				7C42BA9714FBC5A700EE3CDB /* From500.plist in Resources */,
@@ -4684,6 +4679,11 @@
 				7CA647D415051E9C00D7CEC0 /* 787.pdf in Resources */,
 				7CA647D515051E9C00D7CEC0 /* 788.pdf in Resources */,
 				7CA647D715051ED600D7CEC0 /* Physics.sqlite in Resources */,
+				7CA17F68150B96F80065516B /* Chemistry.m4v in Resources */,
+				7CA17F69150B96F80065516B /* English.m4v in Resources */,
+				7CA17F6A150B96F80065516B /* Maths.m4v in Resources */,
+				7CA17F6B150B96F80065516B /* Maths.png in Resources */,
+				7CA17F6C150B96F80065516B /* Physics.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
