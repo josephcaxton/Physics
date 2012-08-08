@@ -11,6 +11,9 @@
 #import <AudioToolbox/AudioServices.h>
 #import "Sqlite3.h"
 #import "CustomStoreObserver.h"
+#import "GANTracker.h"
+#import <netinet/in.h>
+#import "FBConnect.h"
 
 
 
@@ -33,6 +36,10 @@
 	UIImageView *splashView;
 	UITableViewController *buyScreen;
 	NSThread *SecondThread;
+    
+    // this is to handle return from facebook
+    
+    Facebook *m_facebook;
 	
 	
 }
@@ -54,6 +61,7 @@
 @property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) UITableViewController *buyScreen;
 @property (nonatomic, retain) NSThread *SecondThread;
+@property (nonatomic, retain)  Facebook *m_facebook;
 
 - (NSString *)applicationDocumentsDirectory;
 - (void)PlaySound:(NSString *)FileName;

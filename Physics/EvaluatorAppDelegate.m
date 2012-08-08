@@ -10,11 +10,15 @@
 #import "EvaluatorAppDelegate.h"
 
 
+// Dispatch period in seconds
+static const NSInteger kGANDispatchPeriodSec = 10;
+static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
+
 @implementation EvaluatorAppDelegate
 
 @synthesize window;
 @synthesize	tabBarController,splashView;
-@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread; 
+@synthesize AllocatedMarks,Difficulty,Topic,TypeOfQuestion,NumberOfQuestions,NumberOfQuestionsDisplayed,PossibleScores,ClientScores,buyScreen,SecondThread,m_facebook; 
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -22,14 +26,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     //Remove the my admin tabbarItem ..
-    NSMutableArray *viewControllers = [NSMutableArray arrayWithArray:tabBarController.viewControllers];
-    [viewControllers removeObjectAtIndex:5];
-    [tabBarController setViewControllers:viewControllers];
+   // NSMutableArray *viewControllers = [NSMutableArray arrayWithArray:tabBarController.viewControllers];
+   // [viewControllers removeObjectAtIndex:5];
+   // [tabBarController setViewControllers:viewControllers];
 
     
     //Copy database over if the database is not there on the device.Test
 	
-	[self CopyDataBase];
+	//[self CopyDataBase];
 	SecondThread = nil;
 	// Override point for customization after application launch.
 	NSManagedObjectContext *context =[self managedObjectContext];
@@ -140,6 +144,53 @@
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 	// Reset Badge Count 
     application.applicationIconBadgeNumber = 0; 
+    
+    //Analytics
+    [[GANTracker sharedTracker] startTrackerWithAccountID:kAnalyticsAccountId
+                                           dispatchPeriod:kGANDispatchPeriodSec
+                                                 delegate:nil];
+    NSError *error;
+    
+    /* if (![[GANTracker sharedTracker] setCustomVariableAtIndex:1
+     name:@"iOS1"
+     value:@"iv1"
+     withError:&error]) {
+     NSLog(@"error in setCustomVariableAtIndex");
+     } */
+    
+    if (![[GANTracker sharedTracker] trackEvent:@"Physics iPad Started"
+                                         action:@"Launch iOS"
+                                          label:@"Launch iOS"
+                                          value:1
+                                      withError:&error]) {
+        NSLog(@"error in trackEvent");
+    }
+    
+    if (![[GANTracker sharedTracker] trackPageview:@"/AppDelegate"
+                                         withError:&error]) {
+        NSLog(@"error in trackPageview");
+    }
+    
+
+    // Review
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *ReviewID = [prefs stringForKey:@"Review"];
+    if (ReviewID == nil) {
+        
+        NSString *ID = @"0";
+        [prefs setObject:ID forKey:@"Review"];
+        [prefs setObject:ID forKey:@"IHaveLeftReview"];
+        
+        [prefs synchronize];
+        
+    }
+    //for testing
+    /*NSString *ID = @"0";
+     [prefs setObject:ID forKey:@"Review"];
+     [prefs setObject:ID forKey:@"IHaveLeftReview"];
+     
+     [prefs synchronize];*/
+
 	
 	return YES;
 }
@@ -652,9 +703,25 @@
     
 }
 
+// Pre iOS 4.2 support
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [m_facebook handleOpenURL:url]; 
+}
+
+// For iOS 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [m_facebook handleOpenURL:url]; 
+}
+
+
+
+
 
 
 - (void)dealloc {
+    
+    [[GANTracker sharedTracker] stopTracker];
     
     [managedObjectContext release];
     [managedObjectModel release];

@@ -26,33 +26,39 @@
     [super viewDidLoad];
 	
     self.navigationItem.title = @"GCSE Sample Videos";
+    
+    UINavigationController *nav =self.navigationController;
+    nav.navigationBar.tintColor = [UIColor blackColor];
+    
+    
 	listofItems = [[NSMutableArray alloc] init];
 	ImageNames = [[NSMutableArray alloc] init];
 	// Add items to the array this is hardcoded for now .. may need to be migrated to the database
-	[listofItems addObject:@"Maths"];
+	[listofItems addObject:@"Maths - Collecting and recording data"];
 	[ImageNames addObject:@"Maths.png"];
-	[listofItems addObject:@"  English"];
+	[listofItems addObject:@"Conflict peom - Bayonet Charge"];
 	[ImageNames addObject:@"English.png"];
-	[listofItems addObject:@" Physics"];
-	[ImageNames addObject:@"Physics.png"];
-	[listofItems addObject:@" Chemistry"];
-	[ImageNames addObject:@"Chemistry.png"];
-//	[listofItems addObject:@"French"];
-//	[ImageNames addObject:@"French.png"];
-//	[listofItems addObject:@"Batteries"];
-//	[ImageNames addObject:@"Batteries.png"];
-//	[listofItems addObject:@"The Ruined Maid"];
-//	[ImageNames addObject:@"Ruined_maid.png"];
-//	[listofItems addObject:@"Les Grand Seigneurs"];
-//	[ImageNames addObject:@"LesGrandSeignors.png"];
-//	[listofItems addObject:@"Horse Whisperer"];
-//	[ImageNames addObject:@"HorseWhisperer.png"];
-//	[listofItems addObject:@"Hunchback in the Park"];
-//	[ImageNames addObject:@"Hunchback.png"];
-//	[listofItems addObject:@"The Clown Punk"];
-//	[ImageNames addObject:@"ClownPunk.png"];
-//	[listofItems addObject:@"Concave Convex Rap"];
-//	[ImageNames addObject:@"Convexrap.png"];
+	//[listofItems addObject:@" Physics"];
+	//[ImageNames addObject:@"Physics.png"];
+	//[listofItems addObject:@" Chemistry"];
+	//[ImageNames addObject:@"Chemistry.png"];
+    //	[listofItems addObject:@"French"];
+    //	[ImageNames addObject:@"French.png"];
+    //	[listofItems addObject:@"Batteries"];
+    //	[ImageNames addObject:@"Batteries.png"];
+    //	[listofItems addObject:@"The Ruined Maid"];
+    //	[ImageNames addObject:@"Ruined_maid.png"];
+    //	[listofItems addObject:@"Les Grand Seigneurs"];
+    //	[ImageNames addObject:@"LesGrandSeignors.png"];
+    //	[listofItems addObject:@"Horse Whisperer"];
+    //	[ImageNames addObject:@"HorseWhisperer.png"];
+    //	[listofItems addObject:@"Hunchback in the Park"];
+    //	[ImageNames addObject:@"Hunchback.png"];
+    //	[listofItems addObject:@"The Clown Punk"];
+    //	[ImageNames addObject:@"ClownPunk.png"];
+    //	[listofItems addObject:@"Concave Convex Rap"];
+    //	[ImageNames addObject:@"Convexrap.png"];
+	
 	
 	
 }
@@ -143,32 +149,32 @@
     
     if (indexPath.section == 0) {
 		
-	
-    // Configure the cell...
-    
-    NSString *cellValue = [[NSString alloc] initWithFormat:@"%@",[listofItems objectAtIndex:indexPath.row]];
-	NSString *PicLocation = [[NSString alloc] initWithFormat:@"%@",[ImageNames objectAtIndex:indexPath.row]];
-	cell.textLabel.text = cellValue;
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+        // Configure the cell...
+        
+        NSString *cellValue = [[NSString alloc] initWithFormat:@"%@",[listofItems objectAtIndex:indexPath.row]];
+        NSString *PicLocation = [[NSString alloc] initWithFormat:@"%@",[ImageNames objectAtIndex:indexPath.row]];
+        cell.textLabel.text = cellValue;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		
-	// Just want to show the thumbnail image
-	//NSString *filepath   =   [[NSBundle mainBundle] pathForResource:cellValue ofType:@"m4v"];
-//	NSURL    *fileURL    =   [NSURL fileURLWithPath:filepath]; 
-//	moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-//	 
-//	UIImage* theImage = [moviePlayerController thumbnailImageAtTime:8 timeOption:MPMovieTimeOptionNearestKeyFrame];	
+        // Just want to show the thumbnail image
+        //NSString *filepath   =   [[NSBundle mainBundle] pathForResource:cellValue ofType:@"m4v"];
+        //	NSURL    *fileURL    =   [NSURL fileURLWithPath:filepath]; 
+        //	moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+        //	 
+        //	UIImage* theImage = [moviePlayerController thumbnailImageAtTime:8 timeOption:MPMovieTimeOptionNearestKeyFrame];	
 		UIImage* theImage = [UIImage imageNamed:PicLocation];
 		cell.imageView.image = theImage;
 		
 		//[moviePlayerController pause];
-//		moviePlayerController.initialPlaybackTime = -1.0;
-//	[moviePlayerController stop];
-//	[moviePlayerController release];
-//	moviePlayerController = nil;
+        //		moviePlayerController.initialPlaybackTime = -1.0;
+        //	[moviePlayerController stop];
+        //	[moviePlayerController release];
+        //	moviePlayerController = nil;
 		
-	[PicLocation release];		
-	[cellValue release];
-	
+        [PicLocation release];		
+        [cellValue release];
+        
 		
 	}
 	
@@ -177,14 +183,16 @@
 		if (!WebText) {
 			
 			WebText =[[UIWebView alloc] initWithFrame:CGRectMake(250,0,480,240)]; 
-		}		
+		}
+		
+		
 		
 		WebText.backgroundColor = [UIColor clearColor];
 		WebText.dataDetectorTypes = UIDataDetectorTypeLink;
         WebText.delegate = self;
 		NSString *Visit = @"Visit ";
 		NSString *Website =[Visit stringByAppendingString: @"<a target=/'_blank/'  href=http://www.learnerscloud.com/?utm_source=itunes&utm_medium=link&utm_content=Maths&utm_campaign=App > LearnersCloud</a>"];
-		NSString *videos = [Website stringByAppendingString:@" <p>Watch hundreds of more HD videos <br/>Complete GCSE English & Maths available<br/><b>Sign up for a FREE trial account now</b></p><br/> Also for schools and colleges."];
+		NSString *videos = [Website stringByAppendingString:@" <p>Watch hundreds of more HD videos <br/>Complete GCSE English & Maths available, Physics and Chemistry coming in september 2012<br/><b>Sign up for a FREE trial account now</b></p><br/> Also for schools and colleges."];
 		
         [WebText loadHTMLString:videos baseURL:nil];
 		
@@ -194,9 +202,9 @@
 		
 		[self willAnimateRotationToInterfaceOrientation:self.interfaceOrientation duration:1];
 	}
-
-		
-			
+    
+    
+	
 	return cell;
 	
 }
@@ -247,6 +255,7 @@
 			
 			
 			break;
+			
 			
 //		case 4:
 //			;

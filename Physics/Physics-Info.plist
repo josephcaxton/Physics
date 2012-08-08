@@ -15,6 +15,17 @@
 		<string>Icon-72.png</string>
 		<string>Icon-Small-50.png</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb401521233242844</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>401521233242844</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.learnersCloud.iEvaluatorForiPad.Physics</string>
 	<key>CFBundleInfoDictionaryVersion</key>

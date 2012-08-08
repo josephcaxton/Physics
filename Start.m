@@ -11,7 +11,7 @@
 
 @implementation Start
 
-@synthesize FirstView, SecondView,FirstTable,SecondTable,QuestionPickerView,CustomDataSource,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction;
+@synthesize FirstView, SecondView,FirstTable,SecondTable,QuestionPickerView,CustomDataSource,Sound,ShowAnswers,logoView,Copyright,WebText,StartPractice,btnStartTest,Instruction,popover;
 
 
 #define SCREEN_WIDTH 768
@@ -49,6 +49,8 @@
 	//[self.view addSubview:SecondView];
 	//[self AddStartButton:2];
 	
+    UINavigationController *nav =self.navigationController;
+    nav.navigationBar.tintColor = [UIColor blackColor];
 	
 }
 
@@ -70,6 +72,30 @@
     }
 
 	[self willAnimateRotationToInterfaceOrientation:self.interfaceOrientation duration:1];
+    
+    // Lets ask for review after user has viewed videos 5 times
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *ReviewID = [prefs stringForKey:@"Review"];
+    NSString *IhaveReviewed = [prefs stringForKey:@"IHaveLeftReview"];
+	NSString *MyAccessLevel = [prefs stringForKey:@"AccessLevel"];
+    NSInteger AccessLevel = [MyAccessLevel intValue];
+    // Note we only want those who have brought to review. Those looking for free talk non-sense.  AccessLevel > 1
+    if ([ReviewID isEqualToString:@"10"] && [IhaveReviewed isEqualToString:@"0"] &&  AccessLevel > 1 ) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Review this app" message:@"Do you like this app enough to leave us a review?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+        [alertView show];
+        
+	}
+    else {
+        
+        NSInteger Counter = [ReviewID integerValue];
+        NSInteger CounterPlus = Counter + 1;
+        NSString *ID = [NSString stringWithFormat:@"%d",CounterPlus];
+        [prefs setObject:ID  forKey:@"Review"];
+        [prefs synchronize];
+        
+    }
+
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration{
@@ -211,7 +237,7 @@
 	
 	if([AccessLevel intValue] == 1){
 		
-		NSString *message = [[NSString alloc] initWithFormat:@"You are using the free version of the app. The app will only deliver a maximum of 30 questions depending on your search criteria and does not necessarily have all types of questions "];
+		NSString *message = [[NSString alloc] initWithFormat:@"You are using the free version of the app. The app will only deliver a maximum of 30 questions depending on your search criteria and does not necessarily have all types of questions. Share to get a free upgrade to 250 questions "];
 		
 		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"Important Notice"
 													   message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -270,14 +296,56 @@
 		
 	}else {
 		
+        // create a toolbar where we can place some buttons
+        UIToolbar* toolbar = [[UIToolbar alloc]
+                              initWithFrame:CGRectMake(0, 0, 180, 45)];
+        [toolbar setBarStyle: UIBarStyleBlack];
+        
+        
+        // create an array for the buttons
+        NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:3];
+        
+        //Start button
+        UIBarButtonItem *StartTest = [[UIBarButtonItem alloc] initWithTitle:@"Start Test Here" style:UIBarButtonItemStyleBordered target:self action:@selector(StartTest:)];
+        
+        [buttons addObject:StartTest ];
+        
+        // create a spacer between the buttons
+        UIBarButtonItem *spacer = [[UIBarButtonItem alloc]
+                                   initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                   target:nil
+                                   action:nil];
+        [buttons addObject:spacer];
+        
+        
+        
+        // Create Share image button
+        UIImage *ShareImage = [UIImage imageNamed:@"shareIcon.png"];
+        UIButton *face = [UIButton buttonWithType:UIButtonTypeCustom];
+        face.bounds = CGRectMake( 0, 0, ShareImage.size.width, ShareImage.size.height );
+        [face setImage:ShareImage forState:UIControlStateNormal];
+        [face addTarget:self action:@selector(share:)forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBarButtonItem *ShareButton = [[UIBarButtonItem alloc] initWithCustomView:face];
+        
+        [buttons addObject:ShareButton];
+        
+        [toolbar setItems:buttons animated:NO];
+        
+        // place the toolbar into the navigation bar
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                                  initWithCustomView:toolbar];
+        
+        [ShareButton release];
+        [spacer release];
+        [StartTest release];
+        //_____
+		
 		UIBarButtonItem *Back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Practice:)];
 		self.navigationItem.leftBarButtonItem = Back;
 		[Back release];
 		
 		
-		UIBarButtonItem *StartTest = [[UIBarButtonItem alloc] initWithTitle:@"Start Test Here" style:UIBarButtonItemStylePlain target:self action:@selector(StartTest:)];
-		self.navigationItem.rightBarButtonItem = StartTest;
-		[StartTest release];
 		
 		EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 		BOOL PlaySound = [[NSUserDefaults standardUserDefaults] boolForKey:@"PlaySound"];
@@ -290,8 +358,7 @@
 		
 		
 		
-	}
-	
+	}	
 	
 }
 
@@ -648,6 +715,68 @@
 	
 	
 }
+
+- (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1){
+        
+        [self reviewPressed];
+        
+    }
+    else {
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        NSString *ReviewID = [prefs stringForKey:@"Review"];
+        NSInteger Counter = [ReviewID integerValue];
+        NSInteger CounterPlus = Counter + 1;
+        NSString *ID = [NSString stringWithFormat:@"%d",CounterPlus];
+        [prefs setObject:ID  forKey:@"Review"];
+        [prefs synchronize];
+        
+    }
+    
+}
+
+- (void)reviewPressed {
+    
+    //Set user has reviewed.
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *ID = @"1";
+    [prefs setObject:ID forKey:@"IHaveLeftReview"];
+    
+    [prefs synchronize];
+    
+    // Report to  analytics
+    NSError *error;
+    if (![[GANTracker sharedTracker] trackEvent:@"User Sent to Review Physics Question iPad at app store"
+                                         action:@"User Sent to Review Physics Question iPad at app store"
+                                          label:@"User Sent to Review Physics Question iPad at app store"
+                                          value:1
+                                      withError:&error]) {
+        NSLog(@"error in trackEvent");
+    }
+    
+    
+    NSString *str = @"https://userpub.itunes.apple.com/WebObjects/MZUserPublishing.woa/wa/addUserReview?id=506614434&type=Purple+Software"; 
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+}
+
+- (IBAction)share:(id)sender{
+    UIButton *button = (UIButton*)sender;
+    
+    PopUpTableviewViewController *tableViewController = [[PopUpTableviewViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    
+    popover = [[UIPopoverController alloc] initWithContentViewController:tableViewController];
+    tableViewController.m_popover = popover;
+    tableViewController.StartPage = self;
+    [popover setPopoverContentSize:CGSizeMake(420, 380) animated:YES];
+    
+    [popover presentPopoverFromRect:CGRectMake(button.frame.size.width / 2, button.frame.size.height / 1, 1, 1) inView:button permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {
