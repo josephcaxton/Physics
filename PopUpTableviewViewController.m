@@ -262,9 +262,9 @@
         MFMailComposeViewController *SendMailcontroller = [[MFMailComposeViewController alloc]init];
         SendMailcontroller.mailComposeDelegate = self;
         //[SendMailcontroller setToRecipients:SendTo];
-        [SendMailcontroller setSubject:@"Learn, revise and test yourself on the go - GCSE Maths App"];
+        [SendMailcontroller setSubject:@"Learn, revise and test yourself on the go - GCSE Physics App"];
         
-        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@" Checkout the FREE LearnersCloud Maths App loaded with thousands of test questions and answers.To download this App for iPad<a href=http://itunes.apple.com/us/app/gcse-maths-questions./id461348306?ls=1&mt=8> click here</a>. For iPhone<a href=http://itunes.apple.com/us/app/gcse-maths-questions/id457831288?ls=1&mt=8>  click here</a>. Or search LearnersCloud in your device’s App store. Don’t forget to come and see us for loads more: www.Learnerscloud.com"] isHTML:YES];
+        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@" Checkout the FREE LearnersCloud Physics App loaded with thousands of test questions and answers.To download this App for iPad<a href=http://itunes.apple.com/us/app/gcse-physics-questions/id506614434?ls=1&mt=8> click here</a>. For iPhone<a href=http://itunes.apple.com/us/app/gcse-maths-questions/id457831288?ls=1&mt=8>  click here</a>. Or search LearnersCloud in your device’s App store. Don’t forget to come and see us for loads more: www.Learnerscloud.com"] isHTML:YES]; // i need to change link for iphone here
         [self presentModalViewController:SendMailcontroller animated:YES];
         [SendMailcontroller release];
 		
@@ -321,7 +321,7 @@
 
 -(void)ConnectToFaceBook {
     
-    facebook = [[Facebook alloc] initWithAppId:@"123133727826074" andDelegate:self];
+    facebook = [[Facebook alloc] initWithAppId:@"401521233242844" andDelegate:self];
     
     //Save a pointer to this object for return from facebook
     EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
@@ -341,7 +341,7 @@
     }
     
     NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   @"I’ve just started using a new GCSE Maths App! Thousands of test questions and answers, plus you can record how well you do and share it. You should check it out, just search LearnersCloud in your device’s App store.",  @"message",nil];
+                                   @"I’ve just started using a new GCSE Physics App! Thousands of test questions and answers, plus you can record how well you do and share it. You should check it out, just search LearnersCloud in your device’s App store.",  @"message",nil];
     
     [facebook dialog:@"apprequests"
            andParams:params
@@ -368,7 +368,7 @@
 
 - (void) logoutButtonClicked:(id)sender {
     
-    facebook = [[Facebook alloc] initWithAppId:@"123133727826074" andDelegate:self];
+    facebook = [[Facebook alloc] initWithAppId:@"401521233242844" andDelegate:self];
     //Save a pointer to this object for return from facebook
     EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
     appDelegate.m_facebook = facebook;
@@ -448,10 +448,10 @@
     
     if ([TWTweetComposeViewController canSendTweet])
     {
-        NSString *UrlString = @"http://itunes.apple.com/us/app/gcse-maths-questions./id461348306?ls=1&mt=8";
+        NSString *UrlString = @"http://itunes.apple.com/us/app/gcse-physics-questions/id506614434?ls=1&mt=8";
         
         TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:@"Checkout @LearnersCloud GCSE #Maths App - Learn, revise and test yourself on the go"];
+        [tweetSheet setInitialText:@"Checkout @LearnersCloud GCSE #Physics App - Learn, revise and test yourself on the go"];
         [tweetSheet addImage:[UIImage imageNamed:@"Icon.png"]];
         [tweetSheet addURL:[NSURL URLWithString:UrlString]];
         
