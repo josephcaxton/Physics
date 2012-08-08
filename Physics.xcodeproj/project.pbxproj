@@ -1141,6 +1141,7 @@
 		7CE944CC15D29E1B0073D1DA /* 1006.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE940DC15D29E1A0073D1DA /* 1006.pdf */; };
 		7CE944CD15D29E1B0073D1DA /* 1007.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE940DD15D29E1A0073D1DA /* 1007.pdf */; };
 		7CE944CE15D29E1B0073D1DA /* 1008.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE940DE15D29E1A0073D1DA /* 1008.pdf */; };
+		7CE944D015D2A9390073D1DA /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CE944CF15D2A8990073D1DA /* Physics.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3720,6 +3721,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE944D015D2A9390073D1DA /* Physics.sqlite in Resources */,
 				7CE93CD315D273EA0073D1DA /* VideoPlayer.m in Resources */,
 				7CE93CD415D273EA0073D1DA /* SelectTopic.m in Resources */,
 				7CE93CD515D273EA0073D1DA /* SelectDifficulty.m in Resources */,
