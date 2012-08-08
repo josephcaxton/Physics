@@ -105,7 +105,6 @@
 		7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */; };
 		7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */; };
 		7CA17F6B150B96F80065516B /* Maths.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CA17F66150B96F80065516B /* Maths.png */; };
-		7CA647D715051ED600D7CEC0 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CA647D615051ED600D7CEC0 /* Physics.sqlite */; };
 		7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CB815D268680073D1DA /* FBDialog.bundle */; };
 		7CE93CC615D268680073D1DA /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CBE15D268680073D1DA /* libfacebook_ios_sdk.a */; };
 		7CE93CCA15D268D70073D1DA /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CC915D268D70073D1DA /* libGoogleAnalytics.a */; };
@@ -1290,7 +1289,6 @@
 		7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
 		7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
 		7CA17F66150B96F80065516B /* Maths.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maths.png; sourceTree = "<group>"; };
-		7CA647D615051ED600D7CEC0 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CE93CB615D268680073D1DA /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7CE93CB715D268680073D1DA /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7CE93CB815D268680073D1DA /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -2327,6 +2325,7 @@
 		7CE940DC15D29E1A0073D1DA /* 1006.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1006.pdf; sourceTree = "<group>"; };
 		7CE940DD15D29E1A0073D1DA /* 1007.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1007.pdf; sourceTree = "<group>"; };
 		7CE940DE15D29E1A0073D1DA /* 1008.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1008.pdf; sourceTree = "<group>"; };
+		7CE944CF15D2A8990073D1DA /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3630,8 +3629,8 @@
 				7CE940DC15D29E1A0073D1DA /* 1006.pdf */,
 				7CE940DD15D29E1A0073D1DA /* 1007.pdf */,
 				7CE940DE15D29E1A0073D1DA /* 1008.pdf */,
-				7CA647D615051ED600D7CEC0 /* Physics.sqlite */,
 				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
+				7CE944CF15D2A8990073D1DA /* Physics.sqlite */,
 				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
 				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
 				7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */,
@@ -3777,7 +3776,6 @@
 				7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */,
 				7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */,
 				7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */,
-				7CA647D715051ED600D7CEC0 /* Physics.sqlite in Resources */,
 				7CA17F6B150B96F80065516B /* Maths.png in Resources */,
 				7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */,
 				7CE93CE215D27D130073D1DA /* shareIcon.png in Resources */,
