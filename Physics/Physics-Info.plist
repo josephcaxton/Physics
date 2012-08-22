@@ -15,17 +15,6 @@
 		<string>Icon-72.png</string>
 		<string>Icon-Small-50.png</string>
 	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb401521233242844</string>
-			</array>
-		</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>401521233242844</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.learnersCloud.iEvaluatorForiPad.Physics</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -38,8 +27,19 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb401521233242844</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>FacebookAppID</key>
+	<string>401521233242844</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>

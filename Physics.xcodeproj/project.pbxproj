@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0D1F4215E51DDC00999411 /* buttonbackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0D1F4115E51DDC00999411 /* buttonbackgroud.png */; };
 		7C42B9FF14FBBB0E00EE3CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */; };
 		7C42BA0114FBBB0E00EE3CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */; };
 		7C42BA0314FBBB0E00EE3CDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0214FBBB0E00EE3CDB /* CoreGraphics.framework */; };
@@ -1145,6 +1146,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0D1F4115E51DDC00999411 /* buttonbackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbackgroud.png; sourceTree = "<group>"; };
 		7C42B9FA14FBBB0E00EE3CDB /* Physics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Physics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2503,6 +2505,7 @@
 				7C42BA9F14FBC5DA00EE3CDB /* Default-PortraitUpsideDown.png */,
 				7C42BAA514FBC5E900EE3CDB /* Graph_Ipad.png */,
 				7C42BAA714FBC5F600EE3CDB /* BlackBackGround.png */,
+				7C0D1F4115E51DDC00999411 /* buttonbackgroud.png */,
 				7CE93CE115D27D130073D1DA /* shareIcon.png */,
 				7CE93CED15D27D7A0073D1DA /* twitter.png */,
 				7CE93CE315D27D430073D1DA /* facebook.png */,
@@ -4795,6 +4798,7 @@
 				7CE944CC15D29E1B0073D1DA /* 1006.pdf in Resources */,
 				7CE944CD15D29E1B0073D1DA /* 1007.pdf in Resources */,
 				7CE944CE15D29E1B0073D1DA /* 1008.pdf in Resources */,
+				7C0D1F4215E51DDC00999411 /* buttonbackgroud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -264,7 +264,7 @@
         //[SendMailcontroller setToRecipients:SendTo];
         [SendMailcontroller setSubject:@"Learn, revise and test yourself on the go - GCSE Physics App"];
         
-        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@" Checkout the FREE LearnersCloud Physics App loaded with thousands of test questions and answers.To download this App for iPad<a href=http://itunes.apple.com/us/app/gcse-physics-questions/id506614434?ls=1&mt=8> click here</a>. For iPhone<a href=http://itunes.apple.com/us/app/gcse-maths-questions/id457831288?ls=1&mt=8>  click here</a>. Or search LearnersCloud in your device’s App store. Don’t forget to come and see us for loads more: www.Learnerscloud.com"] isHTML:YES]; // i need to change link for iphone here
+        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@" Checkout the FREE LearnersCloud Physics App loaded with thousands of test questions and answers.To download this App for iPad<a href=http://itunes.apple.com/us/app/gcse-physics-questions/id506614434?ls=1&mt=8> click here</a>. For iPhone<a href=http://itunes.apple.com/us/app/gcse-physics-questions./id551944206?ls=1&mt=8>  click here</a>. Or search LearnersCloud in your device’s App store. Don’t forget to come and see us for loads more: www.Learnerscloud.com"] isHTML:YES]; // i need to change link for iphone here
         [self presentModalViewController:SendMailcontroller animated:YES];
         [SendMailcontroller release];
 		
