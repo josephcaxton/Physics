@@ -650,7 +650,6 @@
 		7CF45D7215F62BE900EAA7A0 /* 514.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598215F62BE700EAA7A0 /* 514.pdf */; };
 		7CF45D7315F62BE900EAA7A0 /* 515.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598315F62BE700EAA7A0 /* 515.pdf */; };
 		7CF45D7415F62BE900EAA7A0 /* 516.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598415F62BE700EAA7A0 /* 516.pdf */; };
-		7CF45D7515F62BE900EAA7A0 /* 517.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598515F62BE700EAA7A0 /* 517.pdf */; };
 		7CF45D7615F62BE900EAA7A0 /* 518.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598615F62BE700EAA7A0 /* 518.pdf */; };
 		7CF45D7715F62BE900EAA7A0 /* 519.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598715F62BE700EAA7A0 /* 519.pdf */; };
 		7CF45D7815F62BE900EAA7A0 /* 520.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4598815F62BE700EAA7A0 /* 520.pdf */; };
@@ -1143,6 +1142,7 @@
 		7CF45F5F15F62BE900EAA7A0 /* 1007.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */; };
 		7CF45F6015F62BE900EAA7A0 /* 1008.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45B7015F62BE900EAA7A0 /* 1008.pdf */; };
 		7CF45F6215F62C5D00EAA7A0 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45F6115F62C1A00EAA7A0 /* Physics.sqlite */; };
+		7CF4675015F62FCB00EAA7A0 /* 517.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4674F15F62FCB00EAA7A0 /* 517.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1836,7 +1836,6 @@
 		7CF4598215F62BE700EAA7A0 /* 514.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 514.pdf; sourceTree = "<group>"; };
 		7CF4598315F62BE700EAA7A0 /* 515.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 515.pdf; sourceTree = "<group>"; };
 		7CF4598415F62BE700EAA7A0 /* 516.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 516.pdf; sourceTree = "<group>"; };
-		7CF4598515F62BE700EAA7A0 /* 517.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 517.pdf; sourceTree = "<group>"; };
 		7CF4598615F62BE700EAA7A0 /* 518.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 518.pdf; sourceTree = "<group>"; };
 		7CF4598715F62BE700EAA7A0 /* 519.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 519.pdf; sourceTree = "<group>"; };
 		7CF4598815F62BE700EAA7A0 /* 520.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 520.pdf; sourceTree = "<group>"; };
@@ -2329,6 +2328,7 @@
 		7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1007.pdf; sourceTree = "<group>"; };
 		7CF45B7015F62BE900EAA7A0 /* 1008.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1008.pdf; sourceTree = "<group>"; };
 		7CF45F6115F62C1A00EAA7A0 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
+		7CF4674F15F62FCB00EAA7A0 /* 517.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 517.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3141,7 +3141,7 @@
 				7CF4598215F62BE700EAA7A0 /* 514.pdf */,
 				7CF4598315F62BE700EAA7A0 /* 515.pdf */,
 				7CF4598415F62BE700EAA7A0 /* 516.pdf */,
-				7CF4598515F62BE700EAA7A0 /* 517.pdf */,
+				7CF4674F15F62FCB00EAA7A0 /* 517.pdf */,
 				7CF4598615F62BE700EAA7A0 /* 518.pdf */,
 				7CF4598715F62BE700EAA7A0 /* 519.pdf */,
 				7CF4598815F62BE700EAA7A0 /* 520.pdf */,
@@ -4307,7 +4307,6 @@
 				7CF45D7215F62BE900EAA7A0 /* 514.pdf in Resources */,
 				7CF45D7315F62BE900EAA7A0 /* 515.pdf in Resources */,
 				7CF45D7415F62BE900EAA7A0 /* 516.pdf in Resources */,
-				7CF45D7515F62BE900EAA7A0 /* 517.pdf in Resources */,
 				7CF45D7615F62BE900EAA7A0 /* 518.pdf in Resources */,
 				7CF45D7715F62BE900EAA7A0 /* 519.pdf in Resources */,
 				7CF45D7815F62BE900EAA7A0 /* 520.pdf in Resources */,
@@ -4799,6 +4798,7 @@
 				7CF45F5E15F62BE900EAA7A0 /* 1006.pdf in Resources */,
 				7CF45F5F15F62BE900EAA7A0 /* 1007.pdf in Resources */,
 				7CF45F6015F62BE900EAA7A0 /* 1008.pdf in Resources */,
+				7CF4675015F62FCB00EAA7A0 /* 517.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
