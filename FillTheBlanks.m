@@ -669,7 +669,7 @@ static UIWebView *QuestionHeaderBox = nil;
 	switch (textField.tag) {
 		
         // I have taken this off as the question moves off the screen    
-		/*case 0:
+		case 0:
 		{
 			[UIView beginAnimations:nil context:NULL];
 			[UIView setAnimationDuration:0.3];
@@ -679,7 +679,7 @@ static UIWebView *QuestionHeaderBox = nil;
 			self.view.frame = rect;
 			[UIView commitAnimations];
 			break;
-		} */
+		} 
 		case 1:
 		{
 			[UIView beginAnimations:nil context:NULL];

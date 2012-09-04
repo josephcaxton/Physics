@@ -192,7 +192,7 @@
         WebText.delegate = self;
 		NSString *Visit = @"Visit ";
 		NSString *Website =[Visit stringByAppendingString: @"<a target=/'_blank/'  href=http://www.learnerscloud.com/?utm_source=itunes&utm_medium=link&utm_content=Maths&utm_campaign=App > LearnersCloud</a>"];
-		NSString *videos = [Website stringByAppendingString:@" <p>Watch hundreds of more HD videos <br/>Complete GCSE English & Maths available, Physics and Chemistry coming in september 2012<br/><b>Sign up for a FREE trial account now</b></p><br/> Also for schools and colleges."];
+		NSString *videos = [Website stringByAppendingString:@" <p>Watch hundreds of more HD videos <br/>Complete GCSE English, Maths, Physics and Chemistry<br/><b>Sign up for a FREE trial account now</b></p><br/> Also for schools and colleges."];
 		
         [WebText loadHTMLString:videos baseURL:nil];
 		
