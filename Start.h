@@ -34,6 +34,8 @@
 	UIButton *btnStartTest;
     UILabel *Instruction;
     UIPopoverController *popover;
+    UIImageView *TVHeaderImageView;
+
 	
 }
 
@@ -53,6 +55,7 @@
 @property (nonatomic, assign) UIButton *btnStartTest;
 @property (nonatomic, assign) UILabel *Instruction;
 @property (nonatomic, retain)  UIPopoverController *popover;
+@property (nonatomic, retain)  UIImageView *TVHeaderImageView;
 
 -(IBAction)Practice:(id)sender;
 -(IBAction)StartTest:(id)sender;
