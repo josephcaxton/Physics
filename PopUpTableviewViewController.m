@@ -484,7 +484,7 @@
         
         TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
         [tweetSheet setInitialText:@"Checkout @LearnersCloud GCSE #Physics App - Learn, revise and test yourself on the go"];
-        [tweetSheet addImage:[UIImage imageNamed:@"Icon.png"]];
+        [tweetSheet addImage:[UIImage imageNamed:@"Icon-72.png"]];
         [tweetSheet addURL:[NSURL URLWithString:UrlString]];
         
         
