@@ -125,6 +125,7 @@
 		7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B614FD29A2001E4CE7 /* Results.xml */; };
 		7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */; };
 		7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */; };
+		7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C80916492C820053577F /* AVFoundation.framework */; };
 		7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CB815D268680073D1DA /* FBDialog.bundle */; };
 		7CE93CC615D268680073D1DA /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CBE15D268680073D1DA /* libfacebook_ios_sdk.a */; };
 		7CE93CCA15D268D70073D1DA /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CC915D268D70073D1DA /* libGoogleAnalytics.a */; };
@@ -1326,6 +1327,7 @@
 		7C73B8B614FD29A2001E4CE7 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
 		7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
+		7C97C80916492C820053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7CE93CB615D268680073D1DA /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7CE93CB715D268680073D1DA /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7CE93CB815D268680073D1DA /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -2363,6 +2365,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */,
 				7CE93CD115D2734D0073D1DA /* CFNetwork.framework in Frameworks */,
 				7CE93CCF15D2733C0073D1DA /* Twitter.framework in Frameworks */,
 				7C42BA3814FBBC2900EE3CDB /* libsqlite3.0.dylib in Frameworks */,
@@ -2387,6 +2390,7 @@
 		7C42B9EF14FBBB0E00EE3CDB = {
 			isa = PBXGroup;
 			children = (
+				7C97C80916492C820053577F /* AVFoundation.framework */,
 				7C1D8567163C159100164645 /* iTest U.entitlements */,
 				7CE93CB515D268680073D1DA /* facebook-ios-sdk */,
 				7CE93CC715D268A00073D1DA /* Analytics */,
