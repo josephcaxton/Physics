@@ -4988,8 +4988,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physics/Physics-Prefix.pch";
 				INFOPLIST_FILE = "Physics/Physics-Info.plist";
@@ -5000,8 +5000,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "iTest U";
-				PROVISIONING_PROFILE = "5C489AF6-8959-4F53-949B-EEFBCE952A84";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5C489AF6-8959-4F53-949B-EEFBCE952A84";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

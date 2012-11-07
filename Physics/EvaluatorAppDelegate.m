@@ -82,7 +82,8 @@ static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
 	//Add to Window.
 	
 	
-    [window addSubview: tabBarController.view];
+    //[window addSubview: tabBarController.view];
+    [window setRootViewController:tabBarController];
 	[window makeKeyAndVisible];
 	
 	//[self AddSplashScreen];
