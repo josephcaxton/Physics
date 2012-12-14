@@ -125,6 +125,7 @@
 		7C8C193D165E4AB50026CBB5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */; };
 		7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */; };
 		7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C80916492C820053577F /* AVFoundation.framework */; };
+		7CB19584167B5DBF00803F11 /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB19583167B5DBF00803F11 /* 72.pdf */; };
 		7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CB815D268680073D1DA /* FBDialog.bundle */; };
 		7CE93CC615D268680073D1DA /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CBE15D268680073D1DA /* libfacebook_ios_sdk.a */; };
 		7CE93CCA15D268D70073D1DA /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CC915D268D70073D1DA /* libGoogleAnalytics.a */; };
@@ -217,7 +218,6 @@
 		7CF45BB515F62BE900EAA7A0 /* 69.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457C515F62BE600EAA7A0 /* 69.pdf */; };
 		7CF45BB615F62BE900EAA7A0 /* 70.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457C615F62BE600EAA7A0 /* 70.pdf */; };
 		7CF45BB715F62BE900EAA7A0 /* 71.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457C715F62BE600EAA7A0 /* 71.pdf */; };
-		7CF45BB815F62BE900EAA7A0 /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457C815F62BE600EAA7A0 /* 72.pdf */; };
 		7CF45BB915F62BE900EAA7A0 /* 73.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457C915F62BE600EAA7A0 /* 73.pdf */; };
 		7CF45BBA15F62BE900EAA7A0 /* 74.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457CA15F62BE600EAA7A0 /* 74.pdf */; };
 		7CF45BBB15F62BE900EAA7A0 /* 75.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF457CB15F62BE600EAA7A0 /* 75.pdf */; };
@@ -1326,6 +1326,7 @@
 		7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		7C97C80916492C820053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7CB19583167B5DBF00803F11 /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
 		7CE93CB615D268680073D1DA /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7CE93CB715D268680073D1DA /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7CE93CB815D268680073D1DA /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -1418,7 +1419,6 @@
 		7CF457C515F62BE600EAA7A0 /* 69.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 69.pdf; sourceTree = "<group>"; };
 		7CF457C615F62BE600EAA7A0 /* 70.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 70.pdf; sourceTree = "<group>"; };
 		7CF457C715F62BE600EAA7A0 /* 71.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 71.pdf; sourceTree = "<group>"; };
-		7CF457C815F62BE600EAA7A0 /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
 		7CF457C915F62BE600EAA7A0 /* 73.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 73.pdf; sourceTree = "<group>"; };
 		7CF457CA15F62BE600EAA7A0 /* 74.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 74.pdf; sourceTree = "<group>"; };
 		7CF457CB15F62BE600EAA7A0 /* 75.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 75.pdf; sourceTree = "<group>"; };
@@ -2739,7 +2739,7 @@
 				7CF457C515F62BE600EAA7A0 /* 69.pdf */,
 				7CF457C615F62BE600EAA7A0 /* 70.pdf */,
 				7CF457C715F62BE600EAA7A0 /* 71.pdf */,
-				7CF457C815F62BE600EAA7A0 /* 72.pdf */,
+				7CB19583167B5DBF00803F11 /* 72.pdf */,
 				7CF457C915F62BE600EAA7A0 /* 73.pdf */,
 				7CF457CA15F62BE600EAA7A0 /* 74.pdf */,
 				7CF457CB15F62BE600EAA7A0 /* 75.pdf */,
@@ -3873,7 +3873,6 @@
 				7CF45BB515F62BE900EAA7A0 /* 69.pdf in Resources */,
 				7CF45BB615F62BE900EAA7A0 /* 70.pdf in Resources */,
 				7CF45BB715F62BE900EAA7A0 /* 71.pdf in Resources */,
-				7CF45BB815F62BE900EAA7A0 /* 72.pdf in Resources */,
 				7CF45BB915F62BE900EAA7A0 /* 73.pdf in Resources */,
 				7CF45BBA15F62BE900EAA7A0 /* 74.pdf in Resources */,
 				7CF45BBB15F62BE900EAA7A0 /* 75.pdf in Resources */,
@@ -4851,6 +4850,7 @@
 				7C8C193A165E4A9C0026CBB5 /* Icon-72@2x.png in Resources */,
 				7C8C193D165E4AB50026CBB5 /* Icon-Small-50.png in Resources */,
 				7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */,
+				7CB19584167B5DBF00803F11 /* 72.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
