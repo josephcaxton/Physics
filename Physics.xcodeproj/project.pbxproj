@@ -5007,7 +5007,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physics/Physics-Prefix.pch";
 				INFOPLIST_FILE = "Physics/Physics-Info.plist";
@@ -5018,7 +5019,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "DB3B0586-9398-4D9C-B409-00033AD07C67";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
