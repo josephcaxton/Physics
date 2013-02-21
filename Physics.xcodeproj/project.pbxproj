@@ -115,7 +115,6 @@
 		7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1314FBD02B00EE3CDB /* Buy.m */; };
 		7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BB1614FBD03900EE3CDB /* Attribution.m */; };
 		7C42BB1A14FBD1F900EE3CDB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BB1914FBD1F900EE3CDB /* Settings.bundle */; };
-		7C63F64216CA724F00237D83 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C63F64116CA724300237D83 /* Physics.sqlite */; };
 		7C73B8B314FD28D4001E4CE7 /* Evaluator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C73B8B014FD28D4001E4CE7 /* Evaluator.xcdatamodeld */; };
 		7C73B8B514FD2991001E4CE7 /* DescriptiveAnswers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */; };
 		7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B614FD29A2001E4CE7 /* Results.xml */; };
@@ -127,6 +126,7 @@
 		7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */; };
 		7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C80916492C820053577F /* AVFoundation.framework */; };
 		7CB19584167B5DBF00803F11 /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB19583167B5DBF00803F11 /* 72.pdf */; };
+		7CC34FCD16D63F5700EB5E8E /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC34FCC16D63F4300EB5E8E /* Physics.sqlite */; };
 		7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CB815D268680073D1DA /* FBDialog.bundle */; };
 		7CE93CC615D268680073D1DA /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CBE15D268680073D1DA /* libfacebook_ios_sdk.a */; };
 		7CE93CCA15D268D70073D1DA /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE93CC915D268D70073D1DA /* libGoogleAnalytics.a */; };
@@ -1315,7 +1315,6 @@
 		7C42BB1514FBD03900EE3CDB /* Attribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribution.h; sourceTree = "<group>"; };
 		7C42BB1614FBD03900EE3CDB /* Attribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribution.m; sourceTree = "<group>"; };
 		7C42BB1914FBD1F900EE3CDB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		7C63F64116CA724300237D83 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7C73B8B114FD28D4001E4CE7 /* Evaluator 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Evaluator 2.xcdatamodel"; sourceTree = "<group>"; };
 		7C73B8B214FD28D4001E4CE7 /* Evaluator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Evaluator.xcdatamodel; sourceTree = "<group>"; };
 		7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DescriptiveAnswers.xml; sourceTree = "<group>"; };
@@ -1328,6 +1327,7 @@
 		7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		7C97C80916492C820053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7CB19583167B5DBF00803F11 /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
+		7CC34FCC16D63F4300EB5E8E /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CE93CB615D268680073D1DA /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		7CE93CB715D268680073D1DA /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		7CE93CB815D268680073D1DA /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -3676,7 +3676,7 @@
 				7CF45B6E15F62BE900EAA7A0 /* 1006.pdf */,
 				7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */,
 				7CF45B7015F62BE900EAA7A0 /* 1008.pdf */,
-				7C63F64116CA724300237D83 /* Physics.sqlite */,
+				7CC34FCC16D63F4300EB5E8E /* Physics.sqlite */,
 				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
 				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
 				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
@@ -3767,7 +3767,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C63F64216CA724F00237D83 /* Physics.sqlite in Resources */,
+				7CC34FCD16D63F5700EB5E8E /* Physics.sqlite in Resources */,
 				7CE93CD315D273EA0073D1DA /* VideoPlayer.m in Resources */,
 				7CE93CD415D273EA0073D1DA /* SelectTopic.m in Resources */,
 				7CE93CD515D273EA0073D1DA /* SelectDifficulty.m in Resources */,
