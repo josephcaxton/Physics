@@ -46,6 +46,7 @@
 		7C1D855B163BF95500164645 /* btn_buy_deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C1D8556163BF95500164645 /* btn_buy_deselected.png */; };
 		7C1D855E163BF9A200164645 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D855D163BF98100164645 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7C1D8562163BF9E400164645 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D8561163BF9D300164645 /* TransparentToolBar.m */; };
+		7C32EE2816DF6CEE0095954B /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C32EE2716DF6CEE0095954B /* restore.png */; };
 		7C42B9FF14FBBB0E00EE3CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */; };
 		7C42BA0114FBBB0E00EE3CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */; };
 		7C42BA0314FBBB0E00EE3CDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C42BA0214FBBB0E00EE3CDB /* CoreGraphics.framework */; };
@@ -1200,6 +1201,7 @@
 		7C1D8560163BF9D300164645 /* TransparentToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransparentToolBar.h; sourceTree = "<group>"; };
 		7C1D8561163BF9D300164645 /* TransparentToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparentToolBar.m; sourceTree = "<group>"; };
 		7C1D8567163C159100164645 /* iTest U.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "iTest U.entitlements"; path = "Physics/iTest U.entitlements"; sourceTree = "<group>"; };
+		7C32EE2716DF6CEE0095954B /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
 		7C42B9FA14FBBB0E00EE3CDB /* GCSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C42B9FE14FBBB0E00EE3CDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C42BA0014FBBB0E00EE3CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2514,6 +2516,7 @@
 		7C42BA6E14FBC08E00EE3CDB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7C32EE2716DF6CEE0095954B /* restore.png */,
 				7C8C1937165E4A9C0026CBB5 /* Icon-72.png */,
 				7C8C1938165E4A9C0026CBB5 /* Icon-72@2x.png */,
 				7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */,
@@ -4851,6 +4854,7 @@
 				7C8C193D165E4AB50026CBB5 /* Icon-Small-50.png in Resources */,
 				7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */,
 				7CB19584167B5DBF00803F11 /* 72.pdf in Resources */,
+				7C32EE2816DF6CEE0095954B /* restore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
