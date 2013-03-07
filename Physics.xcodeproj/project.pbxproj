@@ -126,6 +126,7 @@
 		7C8C193D165E4AB50026CBB5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */; };
 		7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */; };
 		7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C80916492C820053577F /* AVFoundation.framework */; };
+		7CADFD0916E8E9E30028A3C9 /* 859.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CADFD0816E8E9E20028A3C9 /* 859.pdf */; };
 		7CB19584167B5DBF00803F11 /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB19583167B5DBF00803F11 /* 72.pdf */; };
 		7CC34FCD16D63F5700EB5E8E /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CC34FCC16D63F4300EB5E8E /* Physics.sqlite */; };
 		7CE93CC515D268680073D1DA /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CB815D268680073D1DA /* FBDialog.bundle */; };
@@ -1005,7 +1006,6 @@
 		7CF45EC815F62BE900EAA7A0 /* 856.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45AD815F62BE800EAA7A0 /* 856.pdf */; };
 		7CF45EC915F62BE900EAA7A0 /* 857.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45AD915F62BE800EAA7A0 /* 857.pdf */; };
 		7CF45ECA15F62BE900EAA7A0 /* 858.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45ADA15F62BE800EAA7A0 /* 858.pdf */; };
-		7CF45ECB15F62BE900EAA7A0 /* 859.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45ADB15F62BE800EAA7A0 /* 859.pdf */; };
 		7CF45ECC15F62BE900EAA7A0 /* 860.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45ADC15F62BE800EAA7A0 /* 860.pdf */; };
 		7CF45ECD15F62BE900EAA7A0 /* 861.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45ADD15F62BE800EAA7A0 /* 861.pdf */; };
 		7CF45ECE15F62BE900EAA7A0 /* 862.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45ADE15F62BE800EAA7A0 /* 862.pdf */; };
@@ -1328,6 +1328,7 @@
 		7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		7C8C193C165E4AB50026CBB5 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		7C97C80916492C820053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7CADFD0816E8E9E20028A3C9 /* 859.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 859.pdf; sourceTree = "<group>"; };
 		7CB19583167B5DBF00803F11 /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
 		7CC34FCC16D63F4300EB5E8E /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CE93CB615D268680073D1DA /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
@@ -2207,7 +2208,6 @@
 		7CF45AD815F62BE800EAA7A0 /* 856.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 856.pdf; sourceTree = "<group>"; };
 		7CF45AD915F62BE800EAA7A0 /* 857.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 857.pdf; sourceTree = "<group>"; };
 		7CF45ADA15F62BE800EAA7A0 /* 858.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 858.pdf; sourceTree = "<group>"; };
-		7CF45ADB15F62BE800EAA7A0 /* 859.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 859.pdf; sourceTree = "<group>"; };
 		7CF45ADC15F62BE800EAA7A0 /* 860.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 860.pdf; sourceTree = "<group>"; };
 		7CF45ADD15F62BE800EAA7A0 /* 861.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 861.pdf; sourceTree = "<group>"; };
 		7CF45ADE15F62BE800EAA7A0 /* 862.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 862.pdf; sourceTree = "<group>"; };
@@ -3529,7 +3529,7 @@
 				7CF45AD815F62BE800EAA7A0 /* 856.pdf */,
 				7CF45AD915F62BE800EAA7A0 /* 857.pdf */,
 				7CF45ADA15F62BE800EAA7A0 /* 858.pdf */,
-				7CF45ADB15F62BE800EAA7A0 /* 859.pdf */,
+				7CADFD0816E8E9E20028A3C9 /* 859.pdf */,
 				7CF45ADC15F62BE800EAA7A0 /* 860.pdf */,
 				7CF45ADD15F62BE800EAA7A0 /* 861.pdf */,
 				7CF45ADE15F62BE800EAA7A0 /* 862.pdf */,
@@ -4661,7 +4661,6 @@
 				7CF45EC815F62BE900EAA7A0 /* 856.pdf in Resources */,
 				7CF45EC915F62BE900EAA7A0 /* 857.pdf in Resources */,
 				7CF45ECA15F62BE900EAA7A0 /* 858.pdf in Resources */,
-				7CF45ECB15F62BE900EAA7A0 /* 859.pdf in Resources */,
 				7CF45ECC15F62BE900EAA7A0 /* 860.pdf in Resources */,
 				7CF45ECD15F62BE900EAA7A0 /* 861.pdf in Resources */,
 				7CF45ECE15F62BE900EAA7A0 /* 862.pdf in Resources */,
@@ -4855,6 +4854,7 @@
 				7C8C193E165E4AB50026CBB5 /* Icon-Small-50@2x.png in Resources */,
 				7CB19584167B5DBF00803F11 /* 72.pdf in Resources */,
 				7C32EE2816DF6CEE0095954B /* restore.png in Resources */,
+				7CADFD0916E8E9E30028A3C9 /* 859.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4988,8 +4988,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physics/Physics-Prefix.pch";
 				INFOPLIST_FILE = "Physics/Physics-Info.plist";
@@ -5000,8 +5000,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "37BC0B60-BE97-49B6-84BA-68DAD93F142F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "37BC0B60-BE97-49B6-84BA-68DAD93F142F";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -5011,8 +5011,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physics/Physics-Prefix.pch";
 				INFOPLIST_FILE = "Physics/Physics-Info.plist";
@@ -5023,8 +5023,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "6E4C14E2-CFD7-4124-ACF3-6DB22AB56FE4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E4C14E2-CFD7-4124-ACF3-6DB22AB56FE4";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
