@@ -33,21 +33,17 @@ int dontShowPriceList = 0;
 	
 	ProductFromIstore = response.products;
 	
-	[ProductFromIstore retain];
+	
 	
 	NSSortDescriptor *sortDescriptor;
-	sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"price"
-												  ascending:YES] autorelease];
+	sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"price"
+												  ascending:YES];
 	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
 	
 	
 	SortedDisplayProducts = [ProductFromIstore sortedArrayUsingDescriptors:sortDescriptors]; 
 	
-	[SortedDisplayProducts retain];
-	[ProductFromIstore release];
 	
-	
-	[request release]; //should this be released?
 	[self.tableView reloadData];
 	
 	[(UIActivityIndicatorView *)[self navigationItem].rightBarButtonItem.customView stopAnimating];
@@ -64,7 +60,7 @@ int dontShowPriceList = 0;
     NSString *HeaderLocation = [[NSBundle mainBundle] pathForResource:@"header_bar" ofType:@"png"];
     UIImage *HeaderBackImage = [[UIImage alloc] initWithContentsOfFile:HeaderLocation];
     [self.navigationController.navigationBar setBackgroundImage:HeaderBackImage forBarMetrics:UIBarMetricsDefault];
-    [HeaderBackImage release];
+   
     
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,185,55)];
     label.textColor = [UIColor whiteColor];
@@ -73,7 +69,7 @@ int dontShowPriceList = 0;
     label.font = [UIFont fontWithName:@"Helvetica-Bold" size:24.0];
     self.navigationItem.titleView = label;
     [label sizeToFit];
-    [label release];
+   
 
 	
 		observer = [[CustomStoreObserver alloc] init];
@@ -90,8 +86,8 @@ int dontShowPriceList = 0;
 	[activityIndicator hidesWhenStopped];
 	UIBarButtonItem * barButton = [[UIBarButtonItem alloc] initWithCustomView:activityIndicator];
 	[self navigationItem].rightBarButtonItem = barButton;
-	[activityIndicator release];
-	[barButton release];
+	
+	
 	
 	
 	
@@ -156,7 +152,7 @@ int dontShowPriceList = 0;
 			
 			[Alert show];
 			
-			[Alert release];
+			
 			
 			dontShowPriceList = 1;
 			[self.tableView reloadData];
@@ -178,7 +174,7 @@ int dontShowPriceList = 0;
 		
 		ProductsToIStoreInArray = ProductsToIstore;
 		
-		[ProductsFromConfig release];
+		
 		[self requestProductData];
 		
 		}
@@ -192,7 +188,7 @@ int dontShowPriceList = 0;
 		
 		[Alert show];
 		
-		[Alert release];
+		
 		
 		
 	}
@@ -248,7 +244,7 @@ int dontShowPriceList = 0;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     if (dontShowPriceList == 1) {
@@ -304,7 +300,7 @@ int dontShowPriceList = 0;
 	cell.detailTextLabel.text = [numberFormatter stringFromNumber:product.price];
 	cell.textLabel.text = [product localizedTitle];
 	
-	[numberFormatter release];
+	
             }
         }
     }
@@ -328,33 +324,37 @@ int dontShowPriceList = 0;
 			
 			switch (myTag) {
 				case 1:
-					;
+                {
 					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment1];
 					break;
+                }
 					
 				case 2:
-					;
+                {
 					SKPayment *payment2 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment2];
 					break;
+                }
 				case 3:
-					;
+                {
 					SKPayment *payment3 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.750"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment3];
 					
 					break;
+                }
 				case 4:
-					;
+                {
 					SKPayment *payment4 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.1000"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment4];
 					break;
+                }
                 case 5:
-					;
+                {
 					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
-                
+                }
 					
 			}
 			
@@ -363,65 +363,73 @@ int dontShowPriceList = 0;
 			
 			switch (myTag) {
 				case 1:
-					;
+                {
 					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To500"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment1];
 					
 					break;
+                }
 				case 2:
-					;
+                {
 					SKPayment *payment2 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To750"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment2];
 					
 					break;
+                }
 				case 3:
-					;
+                {
 					SKPayment *payment3 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.250To1000"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment3];
 					
-					break;	
+					break;
+                }
                 case 4:
-					;
+                {
 					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
-					
+                }
 			}
 			
 		case 3: 
 			
 			switch (myTag) {
 				case 1:
-					;
+                {
 					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500To750"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment1];
 					
 					break;
+                }
 				case 2:
-					;
+                {
 					SKPayment *payment2 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.500To1000"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment2];
 					
 					break;
+                }
                 case 3:
-					;
+                {
 					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
                 			}
+            }
 			
 		case 4:
 			switch (myTag) {
 				case 1:
-					;
+                {
 					SKPayment *payment1 = [SKPayment paymentWithProductIdentifier:@"com.LearnersCloud.iEvaluatorForiPad.Physics.750To1000"];
 					[[SKPaymentQueue defaultQueue] addPayment:payment1];
 					break;
+                }
                 case 2:
-					;
+                {
 					[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];
                     [[SKPaymentQueue defaultQueue]restoreCompletedTransactions];
 					break;
+                }
 			}
             
  
@@ -504,14 +512,6 @@ int dontShowPriceList = 0;
 }
 
 
-- (void)dealloc {
-	[ProductFromIstore release];
-	[ProductsToIstore release];
-	[ProductsToIStoreInArray release];
-	[SortedDisplayProducts release];
-	[observer release];
-    [super dealloc];
-}
 
 
 @end

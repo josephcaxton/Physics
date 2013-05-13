@@ -125,7 +125,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     if (indexPath.section == 0 ){
         
@@ -138,8 +138,7 @@
         HeaderImageView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         [headerView addSubview:HeaderImageView];
         [cell addSubview:headerView];
-        [HeaderImageView release];
-        [headerView release];
+               
         
         
         
@@ -157,7 +156,7 @@
         sharedividerView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         [shareView addSubview: sharedividerView];
         [cell addSubview:shareView];
-        [sharedividerView release];
+        
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
@@ -217,7 +216,7 @@
         NotdividerView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         [NotView addSubview: NotdividerView];
         [cell addSubview:NotView];
-        [NotdividerView release];
+        
         
         
         
@@ -298,8 +297,7 @@
         
         [SendMailcontroller setMessageBody:[NSString stringWithFormat:@" Checkout the FREE LearnersCloud Physics App loaded with thousands of test questions and answers.To download this App for iPad<a href=http://itunes.apple.com/us/app/gcse-physics-questions/id506614434?ls=1&mt=8> click here</a>. For iPhone<a href=http://itunes.apple.com/us/app/gcse-physics-questions./id551944206?ls=1&mt=8>  click here</a>. Or search LearnersCloud in your device’s App store. Don’t forget to come and see us for loads more: www.Learnerscloud.com"] isHTML:YES]; // i need to change link for iphone here
         [self presentModalViewController:SendMailcontroller animated:YES];
-        [SendMailcontroller release];
-		
+      		
 	}
 	
 	else {
@@ -310,7 +308,7 @@
 		
 		
 		[Alert show];
-		[Alert release];
+		
 		
 	}
     
@@ -520,8 +518,7 @@
                     
                     break;
                     
-                default:
-                    break;
+              
             }
             [self dismissModalViewControllerAnimated:YES];
         };
@@ -530,7 +527,7 @@
         [ activityIndicator stopAnimating];
         
 	    [self presentModalViewController:tweetSheet animated:YES];
-        [tweetSheet release];
+       
     }
     else
     {
@@ -542,7 +539,7 @@
                                   cancelButtonTitle:@"OK"                                                   
                                   otherButtonTitles:nil];
         [alertView show];
-        [alertView release];
+     
     }
     
 }
@@ -559,7 +556,7 @@
         
         [self.view addSubview:activityIndicator];
         [activityIndicator startAnimating];
-        [activityIndicator release];
+        
         
     }
 	

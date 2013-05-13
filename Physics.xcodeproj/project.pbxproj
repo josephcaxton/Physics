@@ -132,6 +132,9 @@
 		7C73B8B714FD29A2001E4CE7 /* Results.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B614FD29A2001E4CE7 /* Results.xml */; };
 		7C73B8B914FD29B0001E4CE7 /* AttributionIpad.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */; };
 		7C73B8BB14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */; };
+		7C870ECA173EBAB100F86B02 /* SelectNumberofQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C870EC7173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.m */; };
+		7C870ECB173EBAB100F86B02 /* TrailerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C870EC9173EAB0F00F86B02 /* TrailerPlayer.m */; };
+		7C870ECD173EBB7900F86B02 /* Testimonial.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C870ECC173EBB7900F86B02 /* Testimonial.png */; };
 		7C8C1939165E4A9C0026CBB5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C1937165E4A9C0026CBB5 /* Icon-72.png */; };
 		7C8C193A165E4A9C0026CBB5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C1938165E4A9C0026CBB5 /* Icon-72@2x.png */; };
 		7C8C193D165E4AB50026CBB5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */; };
@@ -1334,6 +1337,11 @@
 		7C73B8B614FD29A2001E4CE7 /* Results.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Results.xml; sourceTree = "<group>"; };
 		7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AttributionIpad.pdf; sourceTree = "<group>"; };
 		7C73B8BA14FD29BE001E4CE7 /* copyrightlicense_agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = copyrightlicense_agreement.pdf; sourceTree = "<group>"; };
+		7C870EC6173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectNumberofQuestionsViewController.h; sourceTree = "<group>"; };
+		7C870EC7173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectNumberofQuestionsViewController.m; sourceTree = "<group>"; };
+		7C870EC8173EAB0F00F86B02 /* TrailerPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerPlayer.h; sourceTree = "<group>"; };
+		7C870EC9173EAB0F00F86B02 /* TrailerPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerPlayer.m; sourceTree = "<group>"; };
+		7C870ECC173EBB7900F86B02 /* Testimonial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Testimonial.png; sourceTree = "<group>"; };
 		7C8C1937165E4A9C0026CBB5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		7C8C1938165E4A9C0026CBB5 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		7C8C193B165E4AB50026CBB5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -2565,6 +2573,7 @@
 				7C42BA9514FBC5A700EE3CDB /* FromFree.plist */,
 				7C42BAA514FBC5E900EE3CDB /* Graph_Ipad.png */,
 				7C42BAA714FBC5F600EE3CDB /* BlackBackGround.png */,
+				7C870ECC173EBB7900F86B02 /* Testimonial.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2666,6 +2675,10 @@
 				7C42BB1614FBD03900EE3CDB /* Attribution.m */,
 				7CE93CCB15D26F650073D1DA /* PopUpTableviewViewController.h */,
 				7CE93CCC15D26F670073D1DA /* PopUpTableviewViewController.m */,
+				7C870EC6173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.h */,
+				7C870EC7173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.m */,
+				7C870EC8173EAB0F00F86B02 /* TrailerPlayer.h */,
+				7C870EC9173EAB0F00F86B02 /* TrailerPlayer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -4857,6 +4870,7 @@
 				7C64BCC317170D6D00DC9A4C /* 850.pdf in Resources */,
 				7C15992F172FF314004A11A1 /* 835.pdf in Resources */,
 				7C159930172FF314004A11A1 /* 836.pdf in Resources */,
+				7C870ECD173EBB7900F86B02 /* Testimonial.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4867,6 +4881,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C870ECA173EBAB100F86B02 /* SelectNumberofQuestionsViewController.m in Sources */,
+				7C870ECB173EBAB100F86B02 /* TrailerPlayer.m in Sources */,
 				7C1D8562163BF9E400164645 /* TransparentToolBar.m in Sources */,
 				7C1D855E163BF9A200164645 /* Reachability.m in Sources */,
 				7C42BA0B14FBBB0E00EE3CDB /* main.m in Sources */,
@@ -4989,6 +5005,7 @@
 		7C42BA2714FBBB0F00EE3CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
@@ -5012,6 +5029,7 @@
 		7C42BA2814FBBB0F00EE3CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "Physics/iTest U.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
