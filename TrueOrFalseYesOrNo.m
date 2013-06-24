@@ -316,7 +316,7 @@ static UIWebView *QuestionHeaderBox = nil;
 	}
 	else if (QItem_View && ShowAnswer){
 		
-		count = [AnswerControls count] ;
+		count = [AnswerControls count] + 2 ;
 	}
 	
 	else {
@@ -475,8 +475,17 @@ static UIWebView *QuestionHeaderBox = nil;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // increase the size of the answer cell
+    if(indexPath.row == 3){
+        
+        return 65.0;
+    }
     
-	return 44;
+    else{
+        
+        
+        return 44;
+    }
+
 }
 
 

@@ -22,6 +22,8 @@ static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
 
 #pragma mark -
 #pragma mark Application lifecycle
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
@@ -569,6 +571,7 @@ static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
     
        
    // NSString *DeviceUDID = [NSString stringWithFormat:@"%@",[UIDevice currentDevice].uniqueIdentifier];
+        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")){
     NSString *DeviceUDID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
     NSString *DeviceTokenRemoveCh1 = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
@@ -591,7 +594,7 @@ static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
     } 
 
     
-
+        }
     
     
    /*  NSString *Username = [NSString stringWithFormat:@"r_keay@yahoo.com"];
