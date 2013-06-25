@@ -477,7 +477,7 @@ static UIWebView *QuestionHeaderBox = nil;
     // increase the size of the answer cell
     if(indexPath.row == 3){
         
-        return 65.0;
+        return 85.0;
     }
     
     else{
