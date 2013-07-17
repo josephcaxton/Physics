@@ -14,12 +14,13 @@
 #import	"FillTheBlanks.h"
 #import	"ClientAnswers.h"
 
+
 @implementation ClientEngine
 
 @synthesize managedObjectContext, fetchedResultsController,fetchedResultsController_Topics,fetchedResultsController_QT;
 @synthesize SelectedTopic,QuestionTemplate,ListofQuestions;
 @synthesize DifficultyColumn,DifficultyValue,DifficultyPredicate,SelectedTopicColumn,SelectedTopicValue,SelectedTopicPredicate,AccessLevelColumn,AccessLevelValue,AccessLevelPredicate;
-@synthesize QuestionTemplateColumn,QuestionTemplateValue,QuestionTemplatePredicate,PopBox,UnchangedArray,timer,ExitFlag,NumberCounter,CollectedObjects,SelectedArrays ;
+@synthesize QuestionTemplateColumn,QuestionTemplateValue,QuestionTemplatePredicate,PopBox,UnchangedArray,timer,ExitFlag,NumberCounter,CollectedObjects,SelectedArrays,HUD;
 
 int Hours = 0;
 int mins = 0;
@@ -49,7 +50,14 @@ int ToReviewQuestions = 0;
 	UIImage *BackImage = [[UIImage alloc] initWithContentsOfFile:BackImagePath];
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:BackImage];
     
-    
+    //Back to previous screen
+    UIButton *backbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backbtn setBackgroundImage:[UIImage imageNamed:@"back_arrow40.png"] forState:UIControlStateNormal];
+    [backbtn addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
+    backbtn.frame=CGRectMake(0.0, 0.0, 64.0, 40.0);
+    UIBarButtonItem *GoBack = [[UIBarButtonItem alloc] initWithCustomView:backbtn];
+    self.navigationItem.leftBarButtonItem = GoBack;
+
 
 	
 	
@@ -297,7 +305,7 @@ int ToReviewQuestions = 0;
 	appDelegate.NumberOfQuestionsDisplayed = [NSNumber numberWithInt:[PopBox count]];
 	
 	//Start the timer
-	if([self.timer isValid]){
+	/*if([self.timer isValid]){
 		
 		[timer invalidate];
 		timer = nil;
@@ -308,11 +316,11 @@ int ToReviewQuestions = 0;
 	timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
 	Hours = 0;
 	mins = 0;
-	seconds = 0;
+	seconds = 0;*/
 	
 }
 
-- (void)timerFired:(NSTimer *)timer{
+/*- (void)timerFired:(NSTimer *)timer{
 	
 	
 	seconds ++;
@@ -333,26 +341,36 @@ int ToReviewQuestions = 0;
 	
 	//self.navigationItem.title = [NSString stringWithFormat:@"%i h : %i m : %i s",Hours,mins,seconds];
 	
-}
+}*/
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
+    if(!HUD){
+        
+        HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+        
+    }
+	[self.navigationController.view addSubview:HUD];
+    HUD.delegate = self;
+    [HUD show:YES];
+    [HUD hide: YES afterDelay:1];
+    
 	[self setExitFlag:NO];
 	
-	
-	if ([PopBox count]== 0  && [UnchangedArray count] > 0 && ToReviewQuestions == 0) {
+	EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
+	if (([PopBox count]== 0  && [UnchangedArray count] > 0 && ToReviewQuestions == 0 )|| (appDelegate.FinishTestNow == YES && ToReviewQuestions == 0 )) {
 		
-		EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
-		
+        [PopBox removeAllObjects];
+        appDelegate.FinishTestNow = NO;
 		// Stop the timer and make sure you nil it out if not app will leak
 		 
-		if([self.timer isValid]){
+		/*if([self.timer isValid]){
 			
 		[timer invalidate];
 			
 			timer = nil;
 		
-		}
+		}*/
 		
 		//User has finished answering questions so record to xmlfile
 		
@@ -426,9 +444,122 @@ int ToReviewQuestions = 0;
 	[self.tableView reloadData];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    if ([PopBox count]> 0 && appDelegate.FinishTestNow == NO){
+        // Supply each question until question if finihed in array
+        
+        QuestionItems *SelectedItem = (QuestionItems *)[PopBox objectAtIndex:0];
+        NSString *TemplateType = [NSString stringWithFormat:@"%@", [SelectedItem.QuestionHeader1.QuestionTemplate valueForKey:@"Description"]];
+        
+        if ([TemplateType isEqualToString:@"Multiple Choice Single Answer"] ) {
+            
+            MultipleChoiceSingleAnswer *M_view = [[MultipleChoiceSingleAnswer alloc] initWithNibName:nil bundle:nil];
+            M_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            M_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            M_view.QItem_View = SelectedItem;
+            
+            // Remove this Object from the PopBox
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:M_view animated:YES];
+            //[M_view release];
+        }
+        else if([TemplateType isEqualToString:@"Multiple Choice Multiple Answer"]){
+            
+            MultipleChoiceSingleAnswer *M_view = [[MultipleChoiceSingleAnswer alloc] initWithNibName:nil bundle:nil];
+            M_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            M_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            M_view.QItem_View = SelectedItem;
+            
+            // Remove this Object from the PopBox
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:M_view animated:YES];
+            //[M_view release];
+            
+        }
+        else if([TemplateType isEqualToString:@"Descriptive Type"]){
+            
+            DescriptiveType *D_view =[[DescriptiveType alloc] initWithNibName:nil bundle:nil];
+            
+            D_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            D_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            D_view.QItem_View = SelectedItem;
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:D_view animated:YES];
+            //[D_view release];
+            
+            
+        }
+        else if ([TemplateType isEqualToString:@"True or False"]){
+            
+            TrueOrFalseYesOrNo *T_view =[[TrueOrFalseYesOrNo alloc] initWithNibName:nil bundle:nil];
+            
+            T_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            T_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            T_view.QItem_View = SelectedItem;
+            
+            // Remove this Object from the PopBox
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:T_view animated:YES];
+            //[T_view release];
+            
+            
+        }
+        else if ([TemplateType isEqualToString:@"Yes or No"]){
+            
+            TrueOrFalseYesOrNo *T_view =[[TrueOrFalseYesOrNo alloc] initWithNibName:nil bundle:nil];
+            
+            T_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            T_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            T_view.QItem_View = SelectedItem;
+            
+            // Remove this Object from the PopBox
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:T_view animated:YES];
+            //[T_view release];
+            
+        }
+        else if ([TemplateType isEqualToString:@"Fill the Blanks"]){
+            
+            FillTheBlanks *F_view = [[FillTheBlanks alloc] initWithNibName:nil bundle:nil];
+            
+            F_view.QuestionTemplate = (lk_QuestionTemplate *)SelectedItem.QuestionHeader1.QuestionTemplate;
+            F_view.SelectedTopic = (Topics *)SelectedItem.QuestionHeader1.QuestionHeader_Topic;
+            F_view.QItem_View = SelectedItem;
+            F_view.Specialflag = FALSE;
+            
+            // Remove this Object from the PopBox
+            
+            [PopBox removeObjectAtIndex:0];
+            [NumberCounter removeObjectAtIndex:0];
+            [self.navigationController pushViewController:F_view animated:YES];
+            //[F_view release];
+            
+            
+        }
+    }
+    
+    
+}
+
+
+
 - (void)viewWillDisappear:(BOOL)animated {
 	
-	if (ExitFlag == NO ) {
+	/*if (ExitFlag == NO ) {
 		
 		if([self.timer isValid]){
 			
@@ -439,7 +570,7 @@ int ToReviewQuestions = 0;
 		}
 		
 		
-	}
+	}*/
 
 }
 
@@ -526,7 +657,7 @@ int ToReviewQuestions = 0;
 	if (indexPath.section == 0 && indexPath.row == 0) {
 		EvaluatorAppDelegate *appDelegate = (EvaluatorAppDelegate *)[UIApplication sharedApplication].delegate;
 		
-		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 		cell.textLabel.text =@""; // Don't take this off it is to fix a bug, trust me.
 		cell.detailTextLabel.text = @"Review Questions with Answers";
 		
@@ -559,11 +690,11 @@ int ToReviewQuestions = 0;
 		else {
             //Show only the Filename without extension.
             
-			 /* QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
+          /*  QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:indexPath.row];
 			NSString *FullFileName = [NSString stringWithFormat:@"%@",[QI Question]];
 			NSArray *FileName = [FullFileName componentsSeparatedByString:@"."];
 			
-			cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [FileName objectAtIndex:0]]; */     //indexPath.row +1];     //[QI Question]];  //indexPath.row +1]; //[QI Question];
+			cell.textLabel.text = [NSString stringWithFormat:@"Question   %@", [FileName objectAtIndex:0]];  */    //indexPath.row +1];     //[QI Question]];  //indexPath.row +1]; //[QI Question];
 			
 			cell.textLabel.text = [NSString stringWithFormat:@"Question %i",[[NumberCounter objectAtIndex:indexPath.row]intValue]]; // Just numbering here
 			
@@ -693,12 +824,22 @@ int ToReviewQuestions = 0;
 	}
 	
 	}
+    else if (indexPath.section == 0 && indexPath.row == 0){
+        
+        ClientAnswers *C_view = [[ClientAnswers alloc] initWithStyle:UITableViewStyleGrouped];
+        
+        C_view.FullDataArray = UnchangedArray;
+        ToReviewQuestions = 1;
+        [self.navigationController pushViewController:C_view animated:YES];
+        
+    }
+
 	
 	
 	
 }
 
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+/*- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
 	
 	ClientAnswers *C_view = [[ClientAnswers alloc] initWithStyle:UITableViewStyleGrouped];
 	
@@ -707,7 +848,7 @@ int ToReviewQuestions = 0;
 	[self.navigationController pushViewController:C_view animated:YES];
 	
 	
-}
+}*/
 
 
 #pragma mark -
@@ -827,7 +968,19 @@ int ToReviewQuestions = 0;
 	}
 	
 	return fetchedResultsController_QT;
-}    
+}
+
+-(void)goBack:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+	// Remove HUD from screen when the HUD was hidded
+	[HUD removeFromSuperview];
+	HUD = nil;
+}
+
 
 
 - (void)didReceiveMemoryWarning {
