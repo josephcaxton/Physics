@@ -692,6 +692,10 @@
                     
                 }
                  else{
+                     [DifficultybtnLock removeFromSuperview];
+                     
+                     cell.userInteractionEnabled = YES;
+                     cell.textLabel.enabled = YES;
 
 					cell.textLabel.text = @"Difficulty";
 					cell.detailTextLabel.text = appDelegate.Difficulty;
@@ -724,7 +728,11 @@
                 }
                 else{
                     
-                
+                    [TopicbtnLock removeFromSuperview];
+                    
+                    cell.userInteractionEnabled = YES;
+                    cell.textLabel.enabled = YES;
+
 
 					cell.textLabel.text = @"Topic";
 					cell.detailTextLabel.text = appDelegate.Topic;
@@ -759,7 +767,11 @@
                     
                 }
                 else {
-
+                    
+                    [TypeofquestionbtnLock removeFromSuperview];
+                    
+                    cell.userInteractionEnabled = YES;
+                    cell.textLabel.enabled = YES;
 					cell.textLabel.text = @"Type of question";
 					cell.detailTextLabel.text = appDelegate.TypeOfQuestion;
                 }

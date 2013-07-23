@@ -278,13 +278,13 @@ int ToReviewQuestions = 0;
 	
 		 
 		 //UnchangedArray  = [fetchedResultsController fetchedObjects];
+    if([PopBox count] == 0){
+        PopBox = [UnchangedArray mutableCopy];
+        NumberCounter = [[NSMutableArray alloc]init];
 	
-	PopBox = [UnchangedArray mutableCopy];
-	NumberCounter = [[NSMutableArray alloc]init];
+        NSInteger Counter = [[appDelegate PossibleScores]intValue];
 	
-	NSInteger Counter = [[appDelegate PossibleScores]intValue];
-	
-	for (int i = 0; i <[PopBox count]; i++) {
+        for (int i = 0; i <[PopBox count]; i++) {
 		
 		QuestionItems *QI = (QuestionItems *)[PopBox objectAtIndex:i];
 		
@@ -303,6 +303,7 @@ int ToReviewQuestions = 0;
 	
 	appDelegate.PossibleScores = [NSNumber numberWithInt:Counter];
 	appDelegate.NumberOfQuestionsDisplayed = [NSNumber numberWithInt:[PopBox count]];
+    }
 	
 	//Start the timer
 	/*if([self.timer isValid]){
@@ -550,7 +551,7 @@ int ToReviewQuestions = 0;
             
             
         }
-    }
+    } 
     
     
 }
@@ -631,7 +632,8 @@ int ToReviewQuestions = 0;
 	else {
 		
 		numberOfRows =   [PopBox count];     //[[fetchedResultsController fetchedObjects]count];
-	}
+        //NSLog(@"Numberof Rows is %i",numberOfRows);
+    }
 
 	
 	

@@ -58,7 +58,7 @@ static NSString* const kAnalyticsAccountId = @"UA-33965101-1";
 	
 	
 	AllocatedMarks = [NSNumber numberWithInt:1];
-	NSString *difficulty =(NSString *)@"Easy";
+	NSString *difficulty =(NSString *)@"All";
 	[self setDifficulty:difficulty];
 	
 	NSString *Top = [[NSString alloc] initWithFormat:@"All"];
