@@ -41,7 +41,6 @@
 		7C1D855E163BF9A200164645 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D855D163BF98100164645 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7C1D8562163BF9E400164645 /* TransparentToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D8561163BF9D300164645 /* TransparentToolBar.m */; };
 		7C2850B717918E6C001C046F /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C28506717918DE5001C046F /* libCorePlot-CocoaTouch.a */; };
-		7C2850BB17919341001C046F /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C2850B81791930D001C046F /* Physics.sqlite */; };
 		7C2850BC1791935E001C046F /* LocalReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2850BA1791932A001C046F /* LocalReporting.m */; };
 		7C2850CA17919505001C046F /* report_problem40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2850C017919505001C046F /* report_problem40.png */; };
 		7C2850CB17919505001C046F /* start_test40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2850C117919505001C046F /* start_test40.png */; };
@@ -210,6 +209,7 @@
 		7CE9EEFE1796C7B100F94B81 /* Clear40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE9EEFB1796C7B100F94B81 /* Clear40.png */; };
 		7CE9EEFF1796C7B100F94B81 /* Continue40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE9EEFC1796C7B100F94B81 /* Continue40.png */; };
 		7CE9EF001796C7B100F94B81 /* StopTest40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE9EEFD1796C7B100F94B81 /* StopTest40.png */; };
+		7CF2A08517A1490A00195CBB /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CF2A08417A148F500195CBB /* Physics.sqlite */; };
 		7CF45B7115F62BE900EAA7A0 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578115F62BE600EAA7A0 /* 1.pdf */; };
 		7CF45B7215F62BE900EAA7A0 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578215F62BE600EAA7A0 /* 2.pdf */; };
 		7CF45B7315F62BE900EAA7A0 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578315F62BE600EAA7A0 /* 3.pdf */; };
@@ -1296,7 +1296,6 @@
 		7C2850B417918E03001C046F /* NSCoderExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
 		7C2850B517918E03001C046F /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		7C2850B617918E03001C046F /* NSNumberExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
-		7C2850B81791930D001C046F /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7C2850B91791932A001C046F /* LocalReporting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalReporting.h; sourceTree = "<group>"; };
 		7C2850BA1791932A001C046F /* LocalReporting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalReporting.m; sourceTree = "<group>"; };
 		7C2850C017919505001C046F /* report_problem40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report_problem40.png; sourceTree = "<group>"; };
@@ -1517,6 +1516,7 @@
 		7CE9EEFB1796C7B100F94B81 /* Clear40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clear40.png; sourceTree = "<group>"; };
 		7CE9EEFC1796C7B100F94B81 /* Continue40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Continue40.png; sourceTree = "<group>"; };
 		7CE9EEFD1796C7B100F94B81 /* StopTest40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopTest40.png; sourceTree = "<group>"; };
+		7CF2A08417A148F500195CBB /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CF4578115F62BE600EAA7A0 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		7CF4578215F62BE600EAA7A0 /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		7CF4578315F62BE600EAA7A0 /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
@@ -3927,7 +3927,7 @@
 				7CF45B6E15F62BE900EAA7A0 /* 1006.pdf */,
 				7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */,
 				7CF45B7015F62BE900EAA7A0 /* 1008.pdf */,
-				7C2850B81791930D001C046F /* Physics.sqlite */,
+				7CF2A08417A148F500195CBB /* Physics.sqlite */,
 				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
 				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
 				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
@@ -4018,7 +4018,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2850BB17919341001C046F /* Physics.sqlite in Resources */,
+				7CF2A08517A1490A00195CBB /* Physics.sqlite in Resources */,
 				7CE93CD415D273EA0073D1DA /* SelectTopic.m in Resources */,
 				7CE93CD515D273EA0073D1DA /* SelectDifficulty.m in Resources */,
 				7CE93CD615D273EA0073D1DA /* SelectAllocatedMarks.m in Resources */,
