@@ -33,13 +33,20 @@ static UIWebView *QuestionHeaderBox = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+    //To fix ios7 extending edges
+    if([UIViewController instancesRespondToSelector:@selector(edgesForExtendedLayout)]){
+        
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+
 	QuestionHeaderBox =[[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 400)];
 	QuestionHeaderBox.scalesPageToFit = YES;
 	
 	self.FileListTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 260, SCREEN_WIDTH, SCREEN_HEIGHT - 170) style:UITableViewStyleGrouped];
 	FileListTable.delegate = self;
 	FileListTable.dataSource = self;
-	FileListTable.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+	//FileListTable.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
     
     [self.FileListTable setBackgroundView:nil];
     NSString *BackImagePath = [[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"];
@@ -85,7 +92,7 @@ static UIWebView *QuestionHeaderBox = nil;
 		{
 			
 			
-			CGRect frame = CGRectMake(5, 5, 250, 30);
+			CGRect frame = CGRectMake(40, 5, 250, 30);
 			self.Answer1 =[[UITextField alloc] initWithFrame:frame];
 			self.Answer2 =[[UITextField alloc] initWithFrame:frame];
 			self.Answer3 =[[UITextField alloc] initWithFrame:frame];
@@ -505,7 +512,7 @@ static UIWebView *QuestionHeaderBox = nil;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-	NSInteger count;
+	NSInteger count = 0;
 	
 	if (QItem_View){
 		

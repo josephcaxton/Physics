@@ -24,7 +24,7 @@
 	
 	[super viewDidLoad];
 	
-	UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,185,55)];
+	UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,self.navigationItem.titleView.frame.origin.x,55)];
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
     label.text = self.navigationItem.title;
@@ -217,11 +217,9 @@
 
 
 - (BOOL)isDataSourceAvailable{
-    static BOOL checkNetwork = YES;
+    
 	BOOL _isDataSourceAvailable;
-    if (checkNetwork) { // Since checking the reachability of a host can be expensive, cache the result and perform the reachability check once.
-       // checkNetwork = NO; don't cache
-		
+    
         Boolean success;    
         const char *host_name = "http://chart.apis.google.com"; // my data source host name
 		
@@ -230,7 +228,7 @@
         success = SCNetworkReachabilityGetFlags(reachability, &flags);
         _isDataSourceAvailable = success && (flags & kSCNetworkFlagsReachable) && !(flags & kSCNetworkFlagsConnectionRequired);
         CFRelease(reachability);
-    }
+   
     return _isDataSourceAvailable;
 }
 
@@ -477,7 +475,7 @@
 
 	
 	
-	cell.backgroundColor = [UIColor whiteColor];
+	cell.backgroundColor = [UIColor clearColor];
 		
 	}
 	[self willAnimateRotationToInterfaceOrientation:self.interfaceOrientation duration:1];	
