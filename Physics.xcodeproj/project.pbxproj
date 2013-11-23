@@ -110,6 +110,7 @@
 		7C870ECA173EBAB100F86B02 /* SelectNumberofQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C870EC7173EAB0F00F86B02 /* SelectNumberofQuestionsViewController.m */; };
 		7C870ECB173EBAB100F86B02 /* TrailerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C870EC9173EAB0F00F86B02 /* TrailerPlayer.m */; };
 		7C97C80A16492C820053577F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97C80916492C820053577F /* AVFoundation.framework */; };
+		7C9C260A1840AF4900A50CF0 /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7C9C26091840AF3600A50CF0 /* Physics.sqlite */; };
 		7CADFD0916E8E9E30028A3C9 /* 859.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CADFD0816E8E9E20028A3C9 /* 859.pdf */; };
 		7CB19584167B5DBF00803F11 /* 72.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB19583167B5DBF00803F11 /* 72.pdf */; };
 		7CB552541712BEDD006AA4D8 /* 238.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5524F1712BEDD006AA4D8 /* 238.pdf */; };
@@ -149,7 +150,6 @@
 		7CE93CDE15D273EA0073D1DA /* Buy.m in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BB1314FBD02B00EE3CDB /* Buy.m */; };
 		7CE93CDF15D273EA0073D1DA /* Attribution.m in Resources */ = {isa = PBXBuildFile; fileRef = 7C42BB1614FBD03900EE3CDB /* Attribution.m */; };
 		7CE93CE015D273EA0073D1DA /* PopUpTableviewViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = 7CE93CCC15D26F670073D1DA /* PopUpTableviewViewController.m */; };
-		7CF2A08517A1490A00195CBB /* Physics.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CF2A08417A148F500195CBB /* Physics.sqlite */; };
 		7CF45B7115F62BE900EAA7A0 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578115F62BE600EAA7A0 /* 1.pdf */; };
 		7CF45B7215F62BE900EAA7A0 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578215F62BE600EAA7A0 /* 2.pdf */; };
 		7CF45B7315F62BE900EAA7A0 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578315F62BE600EAA7A0 /* 3.pdf */; };
@@ -1356,6 +1356,7 @@
 		7C870EC8173EAB0F00F86B02 /* TrailerPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailerPlayer.h; sourceTree = "<group>"; };
 		7C870EC9173EAB0F00F86B02 /* TrailerPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailerPlayer.m; sourceTree = "<group>"; };
 		7C97C80916492C820053577F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7C9C26091840AF3600A50CF0 /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CADFD0816E8E9E20028A3C9 /* 859.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 859.pdf; sourceTree = "<group>"; };
 		7CB19583167B5DBF00803F11 /* 72.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 72.pdf; sourceTree = "<group>"; };
 		7CB5524F1712BEDD006AA4D8 /* 238.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 238.pdf; sourceTree = "<group>"; };
@@ -1396,7 +1397,6 @@
 		7CE93CCC15D26F670073D1DA /* PopUpTableviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpTableviewViewController.m; sourceTree = "<group>"; };
 		7CE93CCE15D2733C0073D1DA /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		7CE93CD015D2734D0073D1DA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		7CF2A08417A148F500195CBB /* Physics.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Physics.sqlite; sourceTree = "<group>"; };
 		7CF4578115F62BE600EAA7A0 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		7CF4578215F62BE600EAA7A0 /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		7CF4578315F62BE600EAA7A0 /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
@@ -3747,7 +3747,7 @@
 				7CF45B6E15F62BE900EAA7A0 /* 1006.pdf */,
 				7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */,
 				7CF45B7015F62BE900EAA7A0 /* 1008.pdf */,
-				7CF2A08417A148F500195CBB /* Physics.sqlite */,
+				7C9C26091840AF3600A50CF0 /* Physics.sqlite */,
 				7C73B8B414FD2991001E4CE7 /* DescriptiveAnswers.xml */,
 				7C73B8B614FD29A2001E4CE7 /* Results.xml */,
 				7C73B8B814FD29B0001E4CE7 /* AttributionIpad.pdf */,
@@ -3843,7 +3843,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF2A08517A1490A00195CBB /* Physics.sqlite in Resources */,
+				7C9C260A1840AF4900A50CF0 /* Physics.sqlite in Resources */,
 				7CE93CD415D273EA0073D1DA /* SelectTopic.m in Resources */,
 				7CE93CD515D273EA0073D1DA /* SelectDifficulty.m in Resources */,
 				7CE93CD615D273EA0073D1DA /* SelectAllocatedMarks.m in Resources */,
