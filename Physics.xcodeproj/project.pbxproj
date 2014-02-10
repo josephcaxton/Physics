@@ -1117,6 +1117,7 @@
 		7CF45F5F15F62BE900EAA7A0 /* 1007.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */; };
 		7CF45F6015F62BE900EAA7A0 /* 1008.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45B7015F62BE900EAA7A0 /* 1008.pdf */; };
 		7CF4675015F62FCB00EAA7A0 /* 517.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4674F15F62FCB00EAA7A0 /* 517.pdf */; };
+		CD81ED7E18A84E9000FC551E /* NumberOfQuestionsToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = CD81ED7D18A84E9000FC551E /* NumberOfQuestionsToChoose.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2364,6 +2365,8 @@
 		7CF45B6F15F62BE900EAA7A0 /* 1007.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1007.pdf; sourceTree = "<group>"; };
 		7CF45B7015F62BE900EAA7A0 /* 1008.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1008.pdf; sourceTree = "<group>"; };
 		7CF4674F15F62FCB00EAA7A0 /* 517.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 517.pdf; sourceTree = "<group>"; };
+		CD81ED7C18A84E9000FC551E /* NumberOfQuestionsToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfQuestionsToChoose.h; sourceTree = "<group>"; };
+		CD81ED7D18A84E9000FC551E /* NumberOfQuestionsToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfQuestionsToChoose.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2601,6 +2604,8 @@
 				7C42BA5F14FBBFBD00EE3CDB /* FillTheBlanks.m */,
 				7C42BA6014FBBFBD00EE3CDB /* FillTheBlanks1.h */,
 				7C42BA6114FBBFBD00EE3CDB /* FillTheBlanks1.m */,
+				CD81ED7C18A84E9000FC551E /* NumberOfQuestionsToChoose.h */,
+				CD81ED7D18A84E9000FC551E /* NumberOfQuestionsToChoose.m */,
 			);
 			name = "Template Views";
 			sourceTree = "<group>";
@@ -4940,6 +4945,7 @@
 				7C42BB0814FBCFF600EE3CDB /* CopyrightLicense.m in Sources */,
 				7C42BB0B14FBD00400EE3CDB /* CustomStoreObserver.m in Sources */,
 				7C42BB0E14FBD01000EE3CDB /* CheckExistingFiles.m in Sources */,
+				CD81ED7E18A84E9000FC551E /* NumberOfQuestionsToChoose.m in Sources */,
 				7C42BB1114FBD01D00EE3CDB /* HelpVideo.m in Sources */,
 				7C42BB1414FBD02B00EE3CDB /* Buy.m in Sources */,
 				7C42BB1714FBD03900EE3CDB /* Attribution.m in Sources */,
