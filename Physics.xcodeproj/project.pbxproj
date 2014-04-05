@@ -156,7 +156,6 @@
 		7CF45B7415F62BE900EAA7A0 /* 4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578415F62BE600EAA7A0 /* 4.pdf */; };
 		7CF45B7515F62BE900EAA7A0 /* 5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578515F62BE600EAA7A0 /* 5.pdf */; };
 		7CF45B7615F62BE900EAA7A0 /* 6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578615F62BE600EAA7A0 /* 6.pdf */; };
-		7CF45B7715F62BE900EAA7A0 /* 7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578715F62BE600EAA7A0 /* 7.pdf */; };
 		7CF45B7815F62BE900EAA7A0 /* 8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578815F62BE600EAA7A0 /* 8.pdf */; };
 		7CF45B7915F62BE900EAA7A0 /* 9.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578915F62BE600EAA7A0 /* 9.pdf */; };
 		7CF45B7A15F62BE900EAA7A0 /* 10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4578A15F62BE600EAA7A0 /* 10.pdf */; };
@@ -1118,6 +1117,7 @@
 		7CF45F6015F62BE900EAA7A0 /* 1008.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF45B7015F62BE900EAA7A0 /* 1008.pdf */; };
 		7CF4675015F62FCB00EAA7A0 /* 517.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4674F15F62FCB00EAA7A0 /* 517.pdf */; };
 		CD81ED7E18A84E9000FC551E /* NumberOfQuestionsToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = CD81ED7D18A84E9000FC551E /* NumberOfQuestionsToChoose.m */; };
+		CDD485EC18F02F45004FBF90 /* 7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CDD485EB18F02F45004FBF90 /* 7.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1404,7 +1404,6 @@
 		7CF4578415F62BE600EAA7A0 /* 4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.pdf; sourceTree = "<group>"; };
 		7CF4578515F62BE600EAA7A0 /* 5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 5.pdf; sourceTree = "<group>"; };
 		7CF4578615F62BE600EAA7A0 /* 6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 6.pdf; sourceTree = "<group>"; };
-		7CF4578715F62BE600EAA7A0 /* 7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7.pdf; sourceTree = "<group>"; };
 		7CF4578815F62BE600EAA7A0 /* 8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 8.pdf; sourceTree = "<group>"; };
 		7CF4578915F62BE600EAA7A0 /* 9.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 9.pdf; sourceTree = "<group>"; };
 		7CF4578A15F62BE600EAA7A0 /* 10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 10.pdf; sourceTree = "<group>"; };
@@ -2367,6 +2366,7 @@
 		7CF4674F15F62FCB00EAA7A0 /* 517.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 517.pdf; sourceTree = "<group>"; };
 		CD81ED7C18A84E9000FC551E /* NumberOfQuestionsToChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfQuestionsToChoose.h; sourceTree = "<group>"; };
 		CD81ED7D18A84E9000FC551E /* NumberOfQuestionsToChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfQuestionsToChoose.m; sourceTree = "<group>"; };
+		CDD485EB18F02F45004FBF90 /* 7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2750,7 +2750,7 @@
 				7CF4578415F62BE600EAA7A0 /* 4.pdf */,
 				7CF4578515F62BE600EAA7A0 /* 5.pdf */,
 				7CF4578615F62BE600EAA7A0 /* 6.pdf */,
-				7CF4578715F62BE600EAA7A0 /* 7.pdf */,
+				CDD485EB18F02F45004FBF90 /* 7.pdf */,
 				7CF4578815F62BE600EAA7A0 /* 8.pdf */,
 				7CF4578915F62BE600EAA7A0 /* 9.pdf */,
 				7CF4578A15F62BE600EAA7A0 /* 10.pdf */,
@@ -3886,7 +3886,6 @@
 				7CF45B7415F62BE900EAA7A0 /* 4.pdf in Resources */,
 				7CF45B7515F62BE900EAA7A0 /* 5.pdf in Resources */,
 				7CF45B7615F62BE900EAA7A0 /* 6.pdf in Resources */,
-				7CF45B7715F62BE900EAA7A0 /* 7.pdf in Resources */,
 				7CF45B7815F62BE900EAA7A0 /* 8.pdf in Resources */,
 				7CF45B7915F62BE900EAA7A0 /* 9.pdf in Resources */,
 				7CF45B7A15F62BE900EAA7A0 /* 10.pdf in Resources */,
@@ -3918,6 +3917,7 @@
 				7CD62C7A17FC52CA001819FD /* Images.xcassets in Resources */,
 				7CF45B9415F62BE900EAA7A0 /* 36.pdf in Resources */,
 				7CF45B9515F62BE900EAA7A0 /* 37.pdf in Resources */,
+				CDD485EC18F02F45004FBF90 /* 7.pdf in Resources */,
 				7CF45B9615F62BE900EAA7A0 /* 38.pdf in Resources */,
 				7CF45B9715F62BE900EAA7A0 /* 39.pdf in Resources */,
 				7CF45B9815F62BE900EAA7A0 /* 40.pdf in Resources */,
